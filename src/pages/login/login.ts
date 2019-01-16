@@ -43,7 +43,6 @@ export class LoginPage {
 
   doLogin() {
     if(this.credenciales.usuario == 'franco', this.credenciales.password == 'franco') {
-      debugger;
       this.refrescar();
     } else  {
       this.showAlert("Error", "credenciales incorrectas");

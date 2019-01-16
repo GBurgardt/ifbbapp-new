@@ -1,15 +1,19 @@
 page-login {
+    .loginBox{
+        margin-top: 42%;
+    }
+
     .login {
         max-width: 90% !important;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .loginHeader{
+    .cardsHeader{
         font-weight: bold;
-        background-color: #F6F6F6;
+        background-color: #440f0f;
         padding-left: 3rem;
-        color: color($colors, primary);
+        color: color($colors,light);
     }
 
     .input {
@@ -20,5 +24,31 @@ page-login {
         text-align: center;
         font-size: small;
 
+    }
+
+    .contenido{
+        background: #9a2424;
+    }
+
+    .card-content-md{
+        padding: 13px 5px;
+    }
+
+    .toolbar-title-md {
+        font-size: 1.2rem;
+        padding: 10 0px;
+    }
+
+    .buttonSingIn{
+        text-align: center;
+    }
+
+    .facebook{
+        // font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+        font-family: 'Lucida Grande';
+    }
+
+    .singIn{
+        font-family: "Roboto", "Helvetica Neue", sans-serif;
     }
 }

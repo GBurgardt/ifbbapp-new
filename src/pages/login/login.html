@@ -1,13 +1,9 @@
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Login</ion-title>
-  </ion-navbar>
-
+  <img src="../../assets/imgs/headerLogin.jpg"/>
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="contenido">
   <ion-card no-shadow class="loginBox">
     <ion-card-header class="cardsHeader">
       <ion-icon name="log-in"></ion-icon> LOGIN
@@ -38,10 +34,27 @@
         </ion-row>
         <ion-row>
           <ion-col class="login">
-            <button ion-button full type="submit" [disabled]="!registerForm.form.valid">Ingresar</button>
+            <button ion-button color="dark"  full type="submit" [disabled]="!registerForm.form.valid">Ingresar</button>
           </ion-col>
         </ion-row>
       </form>
     </ion-card-content>
   </ion-card>
+  <div class="buttonSingIn">
+    <button ion-button item-end icon-start color="dark" >
+      <ion-icon name="contact"><label class="singIn">  Sing In</label></ion-icon>
+    </button>
+    <button ion-button item-end icon-start color="dark" >
+      <ion-icon name="logo-facebook"><label class="facebook">  Facebook</label></ion-icon>
+    </button>
+    <button ion-button item-end icon-start color="dark" >
+      <ion-icon name="logo-google"><label>  Google</label></ion-icon>
+    </button>
+  </div>
+  
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Copyright © 2017-2019 <a class="footerText">GoToxy</a></ion-title>
+  </ion-toolbar>
+</ion-footer>
