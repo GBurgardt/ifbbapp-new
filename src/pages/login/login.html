@@ -1,0 +1,47 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card no-shadow class="loginBox">
+    <ion-card-header class="cardsHeader">
+      <ion-icon name="log-in"></ion-icon> LOGIN
+    </ion-card-header>
+    <ion-card-content>
+      <form (ngSubmit)="doLogin()" #registerForm="ngForm">
+        <ion-row>
+          <ion-col class="login">
+            <ion-list inset>
+                <ion-item>
+                  <ion-label stacked>Usuario</ion-label>
+                  <ion-input type="text" autocomplete="off" autocorrect="off" 
+                            autocapitalize="off" spellcheck="false" name="usuario" 
+                            class="input"
+                            [(ngModel)]="credenciales.usuario" required>
+                  </ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Contraseña</ion-label>
+                  <ion-input type="password" autocomplete="off" autocorrect="off" 
+                              autocapitalize="off" spellcheck="false" name="password" 
+                              class="input"
+                              [(ngModel)]="credenciales.password" required>
+                  </ion-input>
+                </ion-item>
+              </ion-list>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="login">
+            <button ion-button full type="submit" [disabled]="!registerForm.form.valid">Ingresar</button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,24 @@
+page-login {
+    .login {
+        max-width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .loginHeader{
+        font-weight: bold;
+        background-color: #F6F6F6;
+        padding-left: 3rem;
+        color: color($colors, primary);
+    }
+
+    .input {
+        text-align: center;
+    }
+    
+    .itemLogin {
+        text-align: center;
+        font-size: small;
+
+    }
+}
