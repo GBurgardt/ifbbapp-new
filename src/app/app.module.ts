@@ -12,11 +12,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginServiceProvider } from '../providers/login-service/login-service';
 import { HttpModule } from '@angular/http';
 import { DatosAppProvider } from '../providers/datos-app/datos-app';
+import { NewsPage } from '../pages/news/news';
 
 @NgModule({
   declarations: [
     MyApp,
-    LoginPage
+    LoginPage,
+    NewsPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { DatosAppProvider } from '../providers/datos-app/datos-app';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    LoginPage
+    LoginPage,
+    NewsPage
   ],
   providers: [
     StatusBar,

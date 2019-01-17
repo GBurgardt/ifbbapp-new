@@ -19,11 +19,16 @@ export class LoginPage {
   public icono : string;
   
   constructor (public navCtrl: NavController,
-  public navParams: NavParams,
-  public sharedData: DatosAppProvider,
-  public loginSvc: LoginServiceProvider,
-  public alertCtrl: AlertController) {
+    public navParams: NavParams,
+    public sharedData: DatosAppProvider,
+    public loginSvc: LoginServiceProvider,
+    public alertCtrl: AlertController) {
     
+  }
+
+  // TODO: Mando al HOME directo para programar
+  ngOnInit() {
+    this.refrescar();
   }
 
   // doLogin() {

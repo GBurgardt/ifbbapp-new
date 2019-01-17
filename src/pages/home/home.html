@@ -1,18 +1,32 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <div class="search-container">
+        <div class="menu-container">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <div class="custom-search">
+            <i class="fas fa-search"></i>
+            <ion-input type="text" value=""></ion-input>
+        </div>
+
+        <div class="user-container">
+            <i class="fas fa-user"></i>
+        </div>
+
+    </div>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+    <div class="header">
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+        <ion-tabs tabsPlacement="top">
+            <!-- <ion-tab tabIcon="menu" [root]="news"></ion-tab> -->
+            <ion-tab tabIcon="paper" [root]="news"></ion-tab>
+            <ion-tab tabIcon="trophy" [root]="news"></ion-tab>
+            <ion-tab tabIcon="basket" [root]="news"></ion-tab>
+            <ion-tab tabIcon="list-box" [root]="news"></ion-tab>
+        </ion-tabs>
+    </div>
+
 </ion-content>

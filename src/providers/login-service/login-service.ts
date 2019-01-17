@@ -1,10 +1,12 @@
 import { Md5 } from 'ts-md5/dist/md5';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Configuraciones } from '../../clases/Configuraciones';
+
+
 import { Headers, Http, Request, RequestOptions, RequestOptionsArgs, RequestMethod } from '@angular/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/timeout';
+import { Configuraciones } from '../../clases/configuraciones';
 
 
 @Injectable()
