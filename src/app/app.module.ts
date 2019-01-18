@@ -1,3 +1,5 @@
+import { CursosPage } from './../pages/cursos/cursos';
+import { PromosPage } from './../pages/promos/promos';
 import { LoginPage } from './../pages/login/login';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -18,7 +20,9 @@ import { NewsPage } from '../pages/news/news';
   declarations: [
     MyApp,
     LoginPage,
-    NewsPage
+    NewsPage,
+    PromosPage,
+    CursosPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { NewsPage } from '../pages/news/news';
   entryComponents: [
     MyApp,
     LoginPage,
-    NewsPage
+    NewsPage,
+    PromosPage,
+    CursosPage
   ],
   providers: [
     StatusBar,
