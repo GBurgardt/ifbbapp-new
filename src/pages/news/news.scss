@@ -1,3 +1,14 @@
 page-news {
+    ion-card-content.card-content.card-content-md {
+        display: flex;
+        flex-direction: column;
 
+        .card-content {
+            display: flex;
+
+            > button {
+                background: #d52638;
+            }
+        }
+    }
 }
