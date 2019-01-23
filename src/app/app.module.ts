@@ -19,10 +19,10 @@ import { NewsPage } from '../pages/news/news';
 @NgModule({
   declarations: [
     MyApp,
-    LoginPage,
     NewsPage,
     PromosPage,
-    CursosPage
+    CursosPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -32,10 +32,10 @@ import { NewsPage } from '../pages/news/news';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    LoginPage,
     NewsPage,
     PromosPage,
-    CursosPage
+    CursosPage,
+    LoginPage
   ],
   providers: [
     StatusBar,

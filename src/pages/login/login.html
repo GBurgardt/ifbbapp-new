@@ -1,60 +1,48 @@
-<ion-header>
-  <img src="../../assets/imgs/headerLogin.jpg"/>
-</ion-header>
+<ion-content padding>
 
+    <div id="logo" padding text-center>
+        <img class="imagenLogin" src="../../assets/imgs/logoLogin.png">
+    </div>
 
-<ion-content padding class="contenido">
-  <ion-card no-shadow class="loginBox">
-    <ion-card-header class="cardsHeader">
-      <ion-icon name="log-in"></ion-icon> LOGIN
-    </ion-card-header>
-    <ion-card-content>
-      <form (ngSubmit)="doLogin()" #registerForm="ngForm">
-        <ion-row>
-          <ion-col class="login">
-            <ion-list inset>
-                <ion-item>
-                  <ion-label stacked>Usuario</ion-label>
-                  <ion-input type="text" autocomplete="off" autocorrect="off" 
-                            autocapitalize="off" spellcheck="false" name="usuario" 
-                            class="input"
-                            [(ngModel)]="credenciales.usuario" required>
-                  </ion-input>
-                </ion-item>
-                <ion-item>
-                  <ion-label stacked>Contraseña</ion-label>
-                  <ion-input type="password" autocomplete="off" autocorrect="off" 
-                              autocapitalize="off" spellcheck="false" name="password" 
-                              class="input"
-                              [(ngModel)]="credenciales.password" required>
-                  </ion-input>
-                </ion-item>
-              </ion-list>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col class="login">
-            <button ion-button color="dark"  full type="submit" [disabled]="!registerForm.form.valid">Ingresar</button>
-          </ion-col>
-        </ion-row>
-      </form>
-    </ion-card-content>
-  </ion-card>
-  <div class="buttonSingIn">
-    <button ion-button item-end icon-start color="dark" >
-      <ion-icon name="contact"><label class="singIn">  Sing In</label></ion-icon>
-    </button>
-    <button ion-button item-end icon-start color="dark" >
-      <ion-icon name="logo-facebook"><label class="facebook">  Facebook</label></ion-icon>
-    </button>
-    <button ion-button item-end icon-start color="dark" >
-      <ion-icon name="logo-google"><label>  Google</label></ion-icon>
-    </button>
-  </div>
-  
+    <div class="container-bottom">
+
+        <div padding class="containerButtons">
+            <ion-segment [(ngModel)]="opt" color="light">
+                <ion-segment-button value="signin">
+                    Sign In
+                </ion-segment-button>
+                <ion-segment-button value="signup">
+                    Sign Up
+                </ion-segment-button>
+            </ion-segment>
+        </div>
+
+        <div [ngSwitch]="opt">
+            <form (submit)="doLogin()" *ngSwitchCase="'signin'">
+                <ion-input type="email" [(ngModel)]="account.email" name="email" placeholder="Usuario"></ion-input>
+                <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Clave"></ion-input>
+                <div padding text-center class="singUpButton">
+                    <button ion-button round color="light" icon-right>
+                        {{ 'SIGIN' }}
+                        <ion-icon name="log-in"></ion-icon>
+                    </button>
+                </div>
+            </form>
+
+            <form class="signup-container" (submit)="doLogin()" *ngSwitchCase="'signup'">
+                <ion-input type="text" [(ngModel)]="account.username" name="username" placeholder="Nombre de Usuario"></ion-input>
+                <ion-input type="text" [(ngModel)]="account.fullname" name="fullname" placeholder="Nombre Completo"></ion-input>
+                <ion-input type="email" [(ngModel)]="account.email" name="email" placeholder="Email"></ion-input>
+                <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Clave"></ion-input>
+                <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Repita la Clave"></ion-input>
+                <div padding text-center class="singUpButton">
+                    <button ion-button round color="light" icon-right>
+                        {{ 'SIGNUP' }}
+                        <ion-icon name="person-add"></ion-icon>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </ion-content>
-<ion-footer>
-  <ion-toolbar>
-    <ion-title>Copyright © 2017-2019 <a class="footerText">GoToxy</a></ion-title>
-  </ion-toolbar>
-</ion-footer>

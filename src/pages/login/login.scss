@@ -1,54 +1,49 @@
 page-login {
-    .loginBox{
-        margin-top: 42%;
-    }
+  .imagenLogin{
+    max-width: 60%;
+  }
 
-    .login {
-        max-width: 90% !important;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  div#logo {
+    padding: 0;
+  }
 
-    .cardsHeader{
-        font-weight: bold;
-        background-color: #440f0f;
-        padding-left: 3rem;
-        color: color($colors,light);
-    }
+  .containerButtons {
+      padding-top: 0 !important;
+  }
+  .content {
+    background-color: #640202;
+  }
+  .item {
+    background-color: color($colors, primary);
+  }
 
-    .input {
-        text-align: center;
-    }
-    
-    .itemLogin {
-        text-align: center;
-        font-size: small;
+  ion-label {
+    color: color($colors, light);
+    text-align: center;
+    margin: 0;
+  }
 
-    }
+  .label {
+    margin: 0 0 5px 0;
+  }
 
-    .contenido{
-        background: #9a2424;
-    }
+  ion-input {
+    background-color: #fff;
+    border-radius: 500px;
+    margin: 0 0 25px 0;
+  }
+  .singUpButton{
+    padding-top: 0 !important;
+  }
 
-    .card-content-md{
-        padding: 13px 5px;
-    }
+  .scroll-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
 
-    .toolbar-title-md {
-        font-size: 1.2rem;
-        padding: 10 0px;
-    }
-
-    .buttonSingIn{
-        text-align: center;
-    }
-
-    .facebook{
-        // font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-        font-family: 'Lucida Grande';
-    }
-
-    .singIn{
-        font-family: "Roboto", "Helvetica Neue", sans-serif;
-    }
+  .signup-container {
+    max-height: 300px;
+    overflow: auto;
+  }
 }
