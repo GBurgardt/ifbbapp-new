@@ -12,7 +12,7 @@ page-home {
     }
 
     .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
-        color: #000000;
+        color: #3c2124;
     }
 
     .tabs-md .tab-button {
@@ -27,14 +27,17 @@ page-home {
 
         .custom-search {
             display: flex;
-            width: 60%;
-            border: solid rgb(44, 44, 44) 2px;
+            width: 40%;
+            border-bottom: solid #2c2c2cbd 2px;
             padding: 0px;
-            border-radius: 17px;
-            margin: 7px;
-            color: rgb(44, 44, 44);
+            /* border-radius: 17px; */
+            margin: 14px 9px 9px;
+            color: #2c2c2cbd;
+            height: 23px;
             > i {
-                margin: 7px 9px 1px 12px;
+                margin: 1.7px 0px 0px 5px;
+                height: 20px;
+                font-size: 1.5rem;
             }
     
             > input {
@@ -43,6 +46,10 @@ page-home {
 
             .text-input-md {
                 margin: 5px 8px;
+            }
+
+            ion-input.input.input-md {
+                height: 20px;
             }
         }
     }
