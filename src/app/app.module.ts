@@ -1,3 +1,4 @@
+import { UserPage } from './../pages/user/user';
 import { CursosPage } from './../pages/cursos/cursos';
 import { PromosPage } from './../pages/promos/promos';
 import { LoginPage } from './../pages/login/login';
@@ -22,7 +23,9 @@ import { NewsPage } from '../pages/news/news';
     NewsPage,
     PromosPage,
     CursosPage,
-    LoginPage
+    LoginPage,
+    UserPage
+    
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { NewsPage } from '../pages/news/news';
     NewsPage,
     PromosPage,
     CursosPage,
-    LoginPage
+    LoginPage,
+    UserPage
   ],
   providers: [
     StatusBar,

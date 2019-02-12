@@ -4,6 +4,7 @@ import { NewsPage } from '../news/news';
 import { PromosPage } from '../promos/promos';
 import { CursosPage } from '../cursos/cursos';
 import { LoginPage } from '../login/login';
+import { UserPage } from '../user/user';
 
 
 
@@ -17,11 +18,16 @@ export class HomePage {
   news;
   promos;
   cursos;
+  user;
 
   constructor(public navCtrl: NavController) {
     this.news = NewsPage;
     this.promos = PromosPage;
     this.cursos = CursosPage;
+    this.user = UserPage;
   }
 
+  goToUserPage(event : any) {
+    this.navCtrl.push(this.user);
+  }
 }
