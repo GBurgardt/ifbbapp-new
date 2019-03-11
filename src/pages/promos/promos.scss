@@ -1,8 +1,14 @@
 page-promos {
     ion-card {
         position: relative;
-        text-align: center;
+        text-align: center;    
+        border-radius: 13px;   
       }
+    
+    .card-md {
+        margin: 10px;
+        border-radius: 13px;
+    }
     
     .card-title {
         width: 100%;   
@@ -22,12 +28,12 @@ page-promos {
 
     .button-md-danger {
         color: #000;
-        background-color: #c92e2e;
+        background-color: color($colors, primary);
         font-size: 1.5rem;
     }
 
     .card-md {
-        background: #e4e3e3;
+        background: color($colors, grey);
     }
 
     .button-round-md {

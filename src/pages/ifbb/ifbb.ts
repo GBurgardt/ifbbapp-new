@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
 @IonicPage()
 @Component({
-  selector: 'page-cursos',
-  templateUrl: 'cursos.html',
+  selector: 'page-ifbb',
+  templateUrl: 'ifbb.html',
 })
-export class CursosPage {
+export class IfbbPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CursosPage');
+    console.log('ionViewDidLoad IfbbPage');
   }
 
 }

@@ -1,26 +1,28 @@
 page-home {
 
     .tabbar.show-tabbar {
-        background: #c92e2e;
-        color: #f8f8f8;
+        background: color($colors, primary);
+        color:color($colors, dark);
     }
 
     .tabs-md .tab-button {
-        color: #f8f8f8;
+        color:color($colors, dark);
         font-weight: bold;
         /* font-size: 3rem !important; */
     }
 
     .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
-        color: #3c2124;
+        color:color($colors, dark);
     }
 
     .tabs-md .tab-button {
         min-height: 4.7rem;
     }
 
+    .tabs-md .tab-button-icon {
+        color: color($colors, dark);
 
-
+    }
     .search-container {
         display: flex;
         justify-content: space-between;
@@ -28,11 +30,11 @@ page-home {
         .custom-search {
             display: flex;
             width: 40%;
-            border-bottom: solid #2c2c2cbd 2px;
+            border-bottom: solid color($colors, dark) 2px;
             padding: 0px;
             /* border-radius: 17px; */
             margin: 14px 9px 9px;
-            color: #2c2c2cbd;
+            color:color($colors, dark);
             height: 23px;
             > i {
                 margin: 1.7px 0px 0px 5px;
@@ -55,7 +57,7 @@ page-home {
     }
 
     ion-header {
-        background: #c92e2e;
+        background: color($colors, primary);
     }
 
     .scroll-content {
@@ -71,7 +73,7 @@ page-home {
         margin: 6px 12px;
         padding: 5px 10px 1px;
         font-size: 2.4rem;
-        color: #4e282b;
+        color:color($colors, dark);
     }
 }
 

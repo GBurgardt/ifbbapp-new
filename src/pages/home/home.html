@@ -1,7 +1,7 @@
 <ion-header>
     <div class="search-container">
         <div class="menu-container">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"(click)="openMenu($event)"></i>
         </div>
         
         <div class="custom-search">
@@ -23,7 +23,7 @@
         <ion-tabs tabsPlacement="top">
             <!-- <ion-tab tabIcon="menu" [root]="news"></ion-tab> -->
             <ion-tab tabIcon="paper" [root]="news"></ion-tab>
-            <ion-tab tabIcon="trophy" [root]="news"></ion-tab>
+            <ion-tab tabIcon="trophy" [root]="torneos"></ion-tab>
             <ion-tab tabIcon="basket" [root]="promos"></ion-tab>
             <ion-tab tabIcon="list-box" [root]="cursos"></ion-tab>
         </ion-tabs>

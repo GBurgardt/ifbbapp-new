@@ -1,15 +1,25 @@
-page-news {
+page-torneos {
     ion-card-content.card-content.card-content-md {
         display: flex;
         flex-direction: column;
+        padding: 3px 16px;
         background: color($colors, grey);
 
+
         .card-content {
-            display: flex;
+            display: block;
+            text-align: -webkit-auto;
+            border: 1px ridge color($colors, dark);;
+
 
             > button {
                 background: color($colors, primary);
             }
         }
+    }
+
+    .card-title-md {
+        text-align: center;
+        font-weight: bold;
     }
 }

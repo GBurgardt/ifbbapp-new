@@ -1,6 +1,6 @@
 page-login {
   .imagenLogin{
-    max-width: 60%;
+    //max-width: 60%;
   }
 
   div#logo {
@@ -11,7 +11,7 @@ page-login {
       padding-top: 0 !important;
   }
   .content {
-    background-color: #640202;
+    background-color: color($colors, primary);
   }
   .item {
     background-color: color($colors, primary);

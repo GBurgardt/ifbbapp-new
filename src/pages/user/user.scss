@@ -1,6 +1,6 @@
 page-user {
     .toolbar-background {
-        background-color: #c92e2e;
+        background-color:color($colors, primary);
     }
 
     .search-container {
@@ -9,11 +9,11 @@ page-user {
 
         .custom-search {
             display: flex;
-            border-bottom: solid #2c2c2cbd 2px;
+            border-bottom: solid color($colors, dark) 2px;
             padding: 0px;
             /* border-radius: 17px; */
             margin: 14px 9px 9px;
-            color: #2c2c2cbd;
+            color: color($colors, dark);
             height: 23px;
             > i {
                 margin: 1.7px 0px 0px 5px;
@@ -39,6 +39,6 @@ page-user {
         margin: 6px 12px;
         padding: 5px 10px 1px;
         font-size: 2.4rem;
-        color: #4e282b;
+        color: color($colors, dark);
     }
 }

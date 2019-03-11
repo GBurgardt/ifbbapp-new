@@ -31,7 +31,6 @@
 
             <form class="signup-container" (submit)="doLogin()" *ngSwitchCase="'signup'">
                 <ion-input type="text" [(ngModel)]="account.username" name="username" placeholder="Nombre de Usuario"></ion-input>
-                <ion-input type="text" [(ngModel)]="account.fullname" name="fullname" placeholder="Nombre Completo"></ion-input>
                 <ion-input type="email" [(ngModel)]="account.email" name="email" placeholder="Email"></ion-input>
                 <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Clave"></ion-input>
                 <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Repita la Clave"></ion-input>

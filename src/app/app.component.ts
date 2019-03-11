@@ -1,14 +1,15 @@
-import { PromosPage } from './../pages/promos/promos';
-import { NewsPage } from './../pages/news/news';
+import { AcercaPage } from './../pages/acerca/acerca';
+import { MisTorneosPage } from './../pages/mis-torneos/mis-torneos';
+import { CalendarioPage } from './../pages/calendario/calendario';
+import { IfbbPage } from './../pages/ifbb/ifbb';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+
 import { LoginPage } from '../pages/login/login';
-import { CursosPage } from '../pages/cursos/cursos';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -18,17 +19,17 @@ export class MyApp {
 
   rootPage: any = LoginPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, icon: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Noticias', component: NewsPage },
-      { title: 'Promos', component: PromosPage },
-      { title: 'Cursos', component: CursosPage }
+      { title: 'Calendario', icon : 'calendar', component: CalendarioPage },
+      { title: 'Mis Torneos', icon : 'trophy', component: MisTorneosPage },
+      { title: 'IFBB', icon : 'globe', component: IfbbPage },
+      { title: 'Acerca', icon : 'information-circle', component: AcercaPage }
     ];
 
   }
@@ -45,6 +46,6 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    this.nav.push(page.component);
   }
 }

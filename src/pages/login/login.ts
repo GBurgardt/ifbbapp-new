@@ -7,15 +7,7 @@ import { IonicPage, NavController, MenuController, AlertController } from 'ionic
   templateUrl: 'login.html'
 })
 
-/**
- * @author: KMR
- * @email: yajuve.25.dz@gmail.com
- */
-
 export class LoginPage {
-  // The account fields for the login form.
-  // If you're using the username field with or without email, make
-  // sure to add it to the type
   account = {
     username: '',
     fullname: '',
@@ -23,9 +15,9 @@ export class LoginPage {
     password: ''
   };
 
-  // Our translated text strings
-  private loginErrorString: string;
-  private opt: string = 'signin';
+    // Our translated text strings
+    private loginErrorString: string;
+    private opt: string = 'signin';
 
   constructor(public menuCtrl: MenuController, public navCtrl: NavController, public alertCtrl: AlertController) {
     this.menuCtrl.enable(false);

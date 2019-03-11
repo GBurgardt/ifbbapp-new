@@ -1,3 +1,7 @@
+import { AcercaPage } from './../pages/acerca/acerca';
+import { CalendarioPage } from './../pages/calendario/calendario';
+import { MisTorneosPage } from './../pages/mis-torneos/mis-torneos';
+import { TorneosPage } from './../pages/torneos/torneos';
 import { UserPage } from './../pages/user/user';
 import { CursosPage } from './../pages/cursos/cursos';
 import { PromosPage } from './../pages/promos/promos';
@@ -7,8 +11,6 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,6 +18,7 @@ import { LoginServiceProvider } from '../providers/login-service/login-service';
 import { HttpModule } from '@angular/http';
 import { DatosAppProvider } from '../providers/datos-app/datos-app';
 import { NewsPage } from '../pages/news/news';
+import { IfbbPage } from '../pages/ifbb/ifbb';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,12 @@ import { NewsPage } from '../pages/news/news';
     PromosPage,
     CursosPage,
     LoginPage,
-    UserPage
+    UserPage,
+    TorneosPage,
+    IfbbPage,
+    MisTorneosPage,
+    CalendarioPage,
+    AcercaPage
     
   ],
   imports: [
@@ -39,7 +47,12 @@ import { NewsPage } from '../pages/news/news';
     PromosPage,
     CursosPage,
     LoginPage,
-    UserPage
+    UserPage,
+    TorneosPage,
+    IfbbPage,
+    MisTorneosPage,
+    CalendarioPage,
+    AcercaPage
   ],
   providers: [
     StatusBar,
