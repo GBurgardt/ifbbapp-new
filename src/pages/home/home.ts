@@ -30,7 +30,7 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-   this.menuController.get();
+    this.menuController.enable(true)
   }
 
   goToUserPage(event : any) {
@@ -39,6 +39,5 @@ export class HomePage {
 
   openMenu(event : any) {
     this.menuController.open();
-
   }
 }

@@ -1,14 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-<<<<<<< HEAD
     <name>IFBB App</name>
-    <description></description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/"></author>
-=======
-    <name>MyApp</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
->>>>>>> f69de8ba7147abc4a3f41f85a882ef03468c5a9f
+    <description />
+    <author email="hi@ionicframework" href="http://ionicframework.com/" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
