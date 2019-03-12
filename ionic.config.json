@@ -1,5 +1,7 @@
 {
   "name": "EventsApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
