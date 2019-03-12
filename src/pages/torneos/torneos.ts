@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
+import { InscripcionesPage } from '../inscripciones/inscripciones';
 
-/**
- * Generated class for the TorneosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,11 +10,31 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TorneosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  items: Array<{titulo: string, imagen: string, fecha: string, lugar: string}>;  
+  inscripciones;
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App) {
+    this.items = [];
+    this.items.push({
+      titulo: 'Campeonato de Apertura 2019',
+      imagen: 'torneo1.jpg',
+      fecha: ' Domingo 7 de Abril',
+      lugar: ' San Justo, Buenos Aires, Argentina'
+    });
+    this.items.push({
+      titulo: 'IV Juegos Sudamericanos de Playa',
+      imagen: 'torneo2.jpg',
+      fecha: ' Marzo del 20 al 23',
+      lugar: ' Rosario, Santa Fe, Argentina'
+    });
+
+    this.inscripciones = InscripcionesPage;
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TorneosPage');
+  public doInscripcion(event: any ,item: any){
+    this.app.getRootNav().push(this.inscripciones,{
+        item:item
+    });
   }
 
 }

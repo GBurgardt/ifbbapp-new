@@ -19,6 +19,7 @@ import { HttpModule } from '@angular/http';
 import { DatosAppProvider } from '../providers/datos-app/datos-app';
 import { NewsPage } from '../pages/news/news';
 import { IfbbPage } from '../pages/ifbb/ifbb';
+import { InscripcionesPage } from '../pages/inscripciones/inscripciones';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { IfbbPage } from '../pages/ifbb/ifbb';
     IfbbPage,
     MisTorneosPage,
     CalendarioPage,
-    AcercaPage
+    AcercaPage,
+    InscripcionesPage
     
   ],
   imports: [
@@ -52,7 +54,8 @@ import { IfbbPage } from '../pages/ifbb/ifbb';
     IfbbPage,
     MisTorneosPage,
     CalendarioPage,
-    AcercaPage
+    AcercaPage,
+    InscripcionesPage
   ],
   providers: [
     StatusBar,
