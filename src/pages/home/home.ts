@@ -34,7 +34,6 @@ export class HomePage {
   }
 
   transition($event) {
-    debugger;
     this.swipeTabDirective.onTabInitialized($event.index);
 }
 

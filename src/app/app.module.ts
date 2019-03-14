@@ -20,7 +20,6 @@ import { DatosAppProvider } from '../providers/datos-app/datos-app';
 import { NewsPage } from '../pages/news/news';
 import { IfbbPage } from '../pages/ifbb/ifbb';
 import { InscripcionesPage } from '../pages/inscripciones/inscripciones';
-import { SwipeTabDirective } from '../directives/swipe-tab.directive';
 
 @NgModule({
   declarations: [
@@ -35,8 +34,7 @@ import { SwipeTabDirective } from '../directives/swipe-tab.directive';
     MisTorneosPage,
     CalendarioPage,
     AcercaPage,
-    InscripcionesPage,
-    SwipeTabDirective
+    InscripcionesPage
     
   ],
   imports: [

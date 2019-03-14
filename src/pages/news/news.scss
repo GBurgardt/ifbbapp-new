@@ -12,4 +12,15 @@ page-news {
             }
         }
     }
+   
+    .card-title-md {
+        display: block;
+        font-size: 2.4rem;
+        line-height: 1.2;
+        /* color: #222; */
+        /* margin: 2px 0; */
+        padding: 3px 0;
+        text-align: center;
+        font-weight: bold;
+    }
 }

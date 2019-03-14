@@ -1,11 +1,11 @@
 <ion-content padding>
     <ion-list>
-        <ion-card *ngFor="let item of items">
-        <img src="../../assets/imgs/{{item.imagen}}" />
+        <ion-card *ngFor="let item of items">      
         <ion-card-content>
             <ion-card-title class="cardTitle">
                {{item.titulo}}
             </ion-card-title>
+            <img src="../../assets/imgs/{{item.imagen}}" />
             <div class="card-content">
                 <p><ion-icon name="calendar"></ion-icon> {{item.fecha}}</p>
                 <p><ion-icon name="pin"></ion-icon> {{item.lugar}}</p>

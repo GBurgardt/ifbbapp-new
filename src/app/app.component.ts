@@ -24,6 +24,10 @@ export class MyApp {
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
+    platform.ready().then(() => {
+      splashScreen.hide();
+    });
+
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Calendario', icon : 'calendar', component: CalendarioPage },
@@ -48,4 +52,6 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.push(page.component);
   }
+
+  
 }
