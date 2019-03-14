@@ -11,10 +11,10 @@ page-login {
       padding-top: 0 !important;
   }
   .content {
-    background-color: color($colors, primario);
+    background: color($colors, primario);
   }
   .item {
-    background-color: color($colors, primario);
+    background: color($colors, primario);
   }
 
   ion-label {
@@ -28,7 +28,7 @@ page-login {
   }
 
   ion-input {
-    background-color: #fff;
+    background: #fff;
     border-radius: 500px;
     margin: 0 0 25px 0;
   }

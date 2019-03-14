@@ -8,7 +8,7 @@ import { IonicPageModule } from 'ionic-angular';
     HomePage,
   ],
   imports: [
-    IonicPageModule.forChild(HomePage),
+    IonicPageModule.forChild(HomePage)
   ],
   exports: [
     HomePage

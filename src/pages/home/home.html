@@ -6,7 +6,7 @@
         
         <div class="custom-search">
             <i class="fas fa-search"></i>
-            <ion-input type="text" value=""></ion-input>
+            <ion-input type="text"></ion-input>
         </div>
 
         <div class="user-container">
@@ -19,9 +19,7 @@
 <ion-content padding>
 
     <div class="header">
-
-        <ion-tabs tabsPlacement="top">
-            <!-- <ion-tab tabIcon="menu" [root]="news"></ion-tab> -->
+        <ion-tabs swipeTab (ionChange)="transition($event)" (onTabChange)="onTabChange($event)" #myTabs tabsPlacement="top">
             <ion-tab tabIcon="paper" [root]="news"></ion-tab>
             <ion-tab tabIcon="trophy" [root]="torneos"></ion-tab>
             <ion-tab tabIcon="basket" [root]="promos"></ion-tab>

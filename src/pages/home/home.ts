@@ -1,3 +1,4 @@
+
 import { TorneosPage } from './../torneos/torneos';
 import { Component } from '@angular/core';
 import { NavController, IonicPage, MenuController } from 'ionic-angular';
@@ -5,8 +6,9 @@ import { NewsPage } from '../news/news';
 import { PromosPage } from '../promos/promos';
 import { CursosPage } from '../cursos/cursos';
 import { UserPage } from '../user/user';
-
-
+import { ViewChild } from '@angular/core';
+import { Tabs } from 'ionic-angular';
+import { SwipeTabDirective } from '../../directives/swipe-tab.directive';
 
 @IonicPage()
 @Component({
@@ -14,7 +16,9 @@ import { UserPage } from '../user/user';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  @ViewChild(SwipeTabDirective) swipeTabDirective: SwipeTabDirective;
+  @ViewChild('myTabs') tabRef: Tabs;
+  
   news;
   promos;
   cursos;
@@ -27,6 +31,15 @@ export class HomePage {
     this.cursos = CursosPage;
     this.user = UserPage;
     this.torneos = TorneosPage;
+  }
+
+  transition($event) {
+    debugger;
+    this.swipeTabDirective.onTabInitialized($event.index);
+}
+
+  onTabChange(index: number) {
+    this.tabRef.select(index);
   }
 
   ionViewDidLoad() {
