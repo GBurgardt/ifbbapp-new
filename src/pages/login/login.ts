@@ -25,7 +25,7 @@ export class LoginPage {
 
   // Attempt to login in through our User service
   doLogin() {
-    if(this.account.username == 'franco', this.account.password == 'franco') {
+    if(this.account.username == 'hola', this.account.password == 'hola') {
       this.refrescar();
     } else  {
       this.showAlert("Error", "credenciales incorrectas");

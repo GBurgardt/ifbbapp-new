@@ -9,6 +9,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 import { LoginPage } from '../pages/login/login';
+import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
+import { NoticiasInternacionalesPage } from '../pages/noticias-internacionales/noticias-internacionales';
 
 
 @Component({
@@ -32,7 +34,9 @@ export class MyApp {
     this.pages = [
       { title: 'Calendario', icon : 'calendar', component: CalendarioPage },
       { title: 'Mis Torneos', icon : 'trophy', component: MisTorneosPage },
-      { title: 'IFBB', icon : 'globe', component: IfbbPage },
+      { title: 'Noticias Internacionales', icon : 'globe', component: NoticiasInternacionalesPage },
+      { title: 'IFBB', icon : 'exit', component: IfbbPage },
+      { title: 'Salud y Bienestar', icon : 'aperture', component: SaludBienestarPage },
       { title: 'Acerca', icon : 'information-circle', component: AcercaPage }
     ];
 

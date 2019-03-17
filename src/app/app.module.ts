@@ -20,6 +20,8 @@ import { DatosAppProvider } from '../providers/datos-app/datos-app';
 import { NewsPage } from '../pages/news/news';
 import { IfbbPage } from '../pages/ifbb/ifbb';
 import { InscripcionesPage } from '../pages/inscripciones/inscripciones';
+import { NoticiasInternacionalesPage } from '../pages/noticias-internacionales/noticias-internacionales';
+import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { InscripcionesPage } from '../pages/inscripciones/inscripciones';
     MisTorneosPage,
     CalendarioPage,
     AcercaPage,
-    InscripcionesPage
+    InscripcionesPage,
+    NoticiasInternacionalesPage,
+    SaludBienestarPage
     
   ],
   imports: [
@@ -55,7 +59,10 @@ import { InscripcionesPage } from '../pages/inscripciones/inscripciones';
     MisTorneosPage,
     CalendarioPage,
     AcercaPage,
-    InscripcionesPage
+    InscripcionesPage,
+    NoticiasInternacionalesPage,
+    SaludBienestarPage
+    
   ],
   providers: [
     StatusBar,
