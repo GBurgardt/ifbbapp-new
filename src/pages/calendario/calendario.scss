@@ -41,7 +41,11 @@ page-calendario {
         background-color: green;
         border-radius: 30px;
     }
-      
+
+    ion-col:focus {
+      background-color:red;
+    }
+
     /*.selected-date {
         width: 20px;
         height: 2px;
