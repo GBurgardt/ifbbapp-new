@@ -17,6 +17,7 @@ export class CalendarioPage {
   currentMonth: any;
   currentYear: any;
   currentDate: any;
+  isSelected: any;
   
   constructor(public navCtrl: NavController, public navParams: NavParams) { 
     this.date = new Date();
@@ -68,6 +69,24 @@ export class CalendarioPage {
   goToNextMonth() {
     this.date = new Date(this.date.getFullYear(), this.date.getMonth()+2, 0);
     this.getDaysOfMonth();
+  }
+
+  selectDay(day : any) {
+    console.log(day, this.currentMonth, this.currentYear);
+    this.isSelected = true;
+  }
+
+  selectDate(day) {
+    this.isSelected = true;
+    /*this.selectedEvent = new Array();
+    var thisDate1 = this.date.getFullYear()+"-"+(this.date.getMonth()+1)+"-"+day+" 00:00:00";
+    var thisDate2 = this.date.getFullYear()+"-"+(this.date.getMonth()+1)+"-"+day+" 23:59:59";
+    this.eventList.forEach(event => {
+      if(((event.startDate >= thisDate1) && (event.startDate <= thisDate2)) || ((event.endDate >= thisDate1) && (event.endDate <= thisDate2))) {
+        this.isSelected = true;
+        this.selectedEvent.push(event);
+      }
+    });*/
   }
 
 }

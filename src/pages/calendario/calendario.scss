@@ -10,7 +10,7 @@ page-calendario {
       
     .col {
         text-align: center;
-        padding: 5px;
+        padding: 8px;
     }
      
     .last-month, .next-month {
@@ -42,7 +42,7 @@ page-calendario {
         border-radius: 30px;
     }
       
-    .selected-date {
+    /*.selected-date {
         width: 20px;
         height: 2px;
         background-color: blue;
@@ -51,7 +51,7 @@ page-calendario {
     .unselected-date {
         border: none;
     }
-      
+      */
     .calendar-body {
         .grid {
           padding: 0;
@@ -77,5 +77,6 @@ page-calendario {
     .calendar-container{
         padding-top: 11%;
     } 
-      
+
+    
 }
