@@ -1,21 +1,114 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Inscripción</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Inscripción</ion-title>
+    </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <div class="container">
-    <div class="titulo">
-      <h1>{{item.titulo}}</h1>
+    <div class="container">
+
+        <ion-card class="card-iffb card-inscripciones">
+            <div class="title-container">
+                <img class="img-title" src="../../assets/imgs/{{item.imagen}}" />
+                <ion-card-title>
+                    {{item.titulo}}
+                </ion-card-title>
+            </div>
+            <ion-card-content>
+                <div class="more-data">
+                    <p class="data-element">
+                        <ion-icon class="icono" name="calendar"></ion-icon> {{item.fecha}}
+                    </p>
+                    <p class="data-element">
+                        <ion-icon class="icono" name="pin"></ion-icon> {{item.lugar}}
+                    </p>
+                    <p class="data-element">
+                        <ion-icon class="icono" name="contact"></ion-icon>
+                        Info inscripción: Jhon Cena, 23 años
+                    </p>
+                </div>
+
+            </ion-card-content>
+
+            <div class="options-container">
+                <ion-list>
+                    <ion-item>
+                        <ion-label>Categoria</ion-label>
+                        <ion-select [(ngModel)]="categoria">
+                            <ion-option value="niño">Niño</ion-option>
+                            <ion-option value="adulto">Adulto</ion-option>
+                            <ion-option value="mayor">Culturivos clasico</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-list>
+                <ion-list>
+                    <ion-item>
+                        <ion-label>División</ion-label>
+                        <ion-select [(ngModel)]="categoria">
+                            <ion-option value="niño">Senior</ion-option>
+                            <ion-option value="adulto">Junior</ion-option>
+                            <ion-option value="mayor">Amatute</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-list>
+                <button class="btn-inscribirse" ion-button small>
+                    Inscribirse
+                </button>
+            </div>
+
+        </ion-card>
+
     </div>
-    <div class="imagen">
-        <img src="../../assets/imgs/{{item.imagen}}" />
-    </div>
-  
-    <div class="contenido">
-      <p><ion-icon name="calendar"></ion-icon> {{item.fecha}}</p>
-      <p><ion-icon name="pin"></ion-icon> {{item.lugar}}</p>
-    </div>
-  </div>
+
 </ion-content>
 
+
+<!-- 
+
+<ion-header>
+        <ion-navbar>
+            <ion-title>Inscripción</ion-title>
+        </ion-navbar>
+    </ion-header>
+    <ion-content padding>
+        <div class="container">
+    
+            <ion-card class="card-iffb">
+                <img src="../../assets/imgs/{{item.imagen}}" />
+    
+                <ion-card-content>
+                    <ion-card-title>
+                        {{item.titulo}}
+                    </ion-card-title>
+                    <div class="more-data">
+                        <p class="data-element">
+                            <ion-icon class="icono" name="calendar"></ion-icon> {{item.fecha}}
+                        </p>
+                        <p class="data-element">
+                            <ion-icon class="icono" name="pin"></ion-icon> {{item.lugar}}
+                        </p>
+                    </div>
+    
+                </ion-card-content>
+    
+                <div class="options-container">
+                    <ion-list>
+                        <ion-item>
+                            <ion-label>Categoria</ion-label>
+                            <ion-select [(ngModel)]="categoria">
+                                <ion-option value="niño">Niño</ion-option>
+                                <ion-option value="adulto">Adulto</ion-option>
+                                <ion-option value="mayor">Anciano</ion-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-list>
+                    <button class="btn-inscribirse" ion-button small>
+                        Inscribirse
+                    </button>
+                </div>
+    
+            </ion-card>
+    
+        </div>
+    
+    </ion-content> -->
+    

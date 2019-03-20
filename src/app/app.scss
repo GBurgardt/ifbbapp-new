@@ -28,3 +28,29 @@ ion-icon {
     font-size: 1.2em;
     padding: 2px;
 }
+
+
+.card-iffb {
+    .data-element {
+        margin: 10px 0px;
+        display: flex;
+        
+        .icono {
+            display: flex;
+            justify-content: center;
+            width: 25px;
+            height: auto;
+            // margin: 0 9px 0 0px;
+            // text-align: center;
+        }
+    }
+    .options-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .btn-inscribirse {
+            margin: 10px;
+        }
+    }
+}

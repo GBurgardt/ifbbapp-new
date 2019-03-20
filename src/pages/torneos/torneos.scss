@@ -3,7 +3,7 @@ page-torneos {
         display: flex;
         flex-direction: column;
         padding: 3px 16px;
-        background: color($colors, grey);
+        // background: color($colors, grey);
 
 
         .card-content {
@@ -19,6 +19,6 @@ page-torneos {
 
     .card-title-md {
         text-align: center;
-        font-weight: bold;
+        // font-weight: bold;
     }
 }
