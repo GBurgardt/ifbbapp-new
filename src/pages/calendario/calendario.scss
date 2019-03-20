@@ -82,5 +82,17 @@ page-calendario {
         padding-top: 11%;
     } 
 
-    
+
+    .calendar-date {
+      ion-col:focus {
+        background: #a3caf1 !important;
+      }
+
+      .marca {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: red;
+      }
+    }
 }
