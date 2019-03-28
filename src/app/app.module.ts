@@ -23,6 +23,7 @@ import { InscripcionesPage } from '../pages/inscripciones/inscripciones';
 import { NoticiasInternacionalesPage } from '../pages/noticias-internacionales/noticias-internacionales';
 import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
 
+
 @NgModule({
   declarations: [
     MyApp,

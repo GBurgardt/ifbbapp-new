@@ -1,3 +1,26 @@
 page-salud-bienestar {
+    ion-card-content.card-content.card-content-md {
+        display: flex;
+        flex-direction: column;
+        // background: color($colors, grey);
 
+        .card-content {
+            display: flex;
+
+            > button {
+                background: color($colors, primario);
+            }
+        }
+    }
+   
+    .card-title-md {
+        // display: block;
+        // font-size: 2.1rem;
+        // line-height: 1.2;
+        // /* color: #222; */
+        // /* margin: 2px 0; */
+        // padding: 3px 0;
+        text-align: center;
+        // font-weight: bold;
+    }
 }

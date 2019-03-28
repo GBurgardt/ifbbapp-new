@@ -27,6 +27,7 @@ export class SwipeTabDirective implements OnInit {
     onTabInitialized(tabIndex: number): void {
         var elem = this._el.nativeElement.querySelectorAll('ion-tab')[tabIndex];
         var content = elem.getElementsByTagName('ion-content')[0];
+        // debugger;
 
         if (content.querySelector('.swipe-area') === null) {
             console.log('add swipe area');

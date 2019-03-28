@@ -9,6 +9,7 @@ import { UserPage } from '../user/user';
 import { ViewChild } from '@angular/core';
 import { Tabs } from 'ionic-angular';
 import { SwipeTabDirective } from '../../directives/swipe-tab.directive';
+import { SaludBienestarPage } from '../salud-bienestar/salud-bienestar';
 
 @IonicPage()
 @Component({
@@ -24,6 +25,7 @@ export class HomePage {
   cursos;
   user;
   torneos;
+  saludBienestar;
 
   constructor(public navCtrl: NavController, public menuController : MenuController) {
     this.news = NewsPage;
@@ -31,6 +33,7 @@ export class HomePage {
     this.cursos = CursosPage;
     this.user = UserPage;
     this.torneos = TorneosPage;
+    this.saludBienestar = SaludBienestarPage;
   }
 
   transition($event) {

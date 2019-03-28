@@ -9,8 +9,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 import { LoginPage } from '../pages/login/login';
-import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
+
 import { NoticiasInternacionalesPage } from '../pages/noticias-internacionales/noticias-internacionales';
+import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
+
 
 
 @Component({
