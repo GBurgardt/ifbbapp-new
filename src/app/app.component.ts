@@ -12,6 +12,7 @@ import { LoginPage } from '../pages/login/login';
 
 import { NoticiasInternacionalesPage } from '../pages/noticias-internacionales/noticias-internacionales';
 import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
+import { EscuelaIfbbPage } from '../pages/escuela-ifbb/escuela-ifbb';
 
 
 
@@ -35,10 +36,11 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Calendario', icon : 'calendar', component: CalendarioPage },
+      { title: 'Salud y Bienestar', icon : 'heart', component: SaludBienestarPage },
       { title: 'Mis Torneos', icon : 'trophy', component: MisTorneosPage },
       { title: 'Noticias Internacionales', icon : 'globe', component: NoticiasInternacionalesPage },
+      { title: 'Escuela IFBB', icon : 'aperture', component: EscuelaIfbbPage },
       { title: 'IFBB', icon : 'exit', component: IfbbPage },
-      { title: 'Salud y Bienestar', icon : 'aperture', component: SaludBienestarPage },
       { title: 'Acerca', icon : 'information-circle', component: AcercaPage }
     ];
 

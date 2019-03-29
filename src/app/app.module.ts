@@ -22,6 +22,7 @@ import { IfbbPage } from '../pages/ifbb/ifbb';
 import { InscripcionesPage } from '../pages/inscripciones/inscripciones';
 import { NoticiasInternacionalesPage } from '../pages/noticias-internacionales/noticias-internacionales';
 import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
+import { EscuelaIfbbPage } from '../pages/escuela-ifbb/escuela-ifbb';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
     AcercaPage,
     InscripcionesPage,
     NoticiasInternacionalesPage,
-    SaludBienestarPage
+    SaludBienestarPage,
+    EscuelaIfbbPage
     
   ],
   imports: [
@@ -62,7 +64,8 @@ import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
     AcercaPage,
     InscripcionesPage,
     NoticiasInternacionalesPage,
-    SaludBienestarPage
+    SaludBienestarPage,
+    EscuelaIfbbPage
     
   ],
   providers: [
