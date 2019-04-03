@@ -36,7 +36,6 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Calendario', icon : 'calendar', component: CalendarioPage },
-      { title: 'Salud y Bienestar', icon : 'heart', component: SaludBienestarPage },
       { title: 'Mis Torneos', icon : 'trophy', component: MisTorneosPage },
       { title: 'Noticias Internacionales', icon : 'globe', component: NoticiasInternacionalesPage },
       { title: 'Escuela IFBB', icon : 'aperture', component: EscuelaIfbbPage },
