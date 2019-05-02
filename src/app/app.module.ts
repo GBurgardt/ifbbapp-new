@@ -14,15 +14,18 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { LoginServiceProvider } from '../providers/login-service/login-service';
+
 import { HttpModule } from '@angular/http';
-import { DatosAppProvider } from '../providers/datos-app/datos-app';
 import { NewsPage } from '../pages/news/news';
 import { IfbbPage } from '../pages/ifbb/ifbb';
 import { InscripcionesPage } from '../pages/inscripciones/inscripciones';
 import { NoticiasInternacionalesPage } from '../pages/noticias-internacionales/noticias-internacionales';
 import { SaludBienestarPage } from '../pages/salud-bienestar/salud-bienestar';
 import { EscuelaIfbbPage } from '../pages/escuela-ifbb/escuela-ifbb';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from '../services/authService/authService';
+import { LoginService } from '../services/loginService/loginService';
+import { LocalStorageService } from '../services/localStorageService/localStorageService';
 
 
 @NgModule({
@@ -42,12 +45,13 @@ import { EscuelaIfbbPage } from '../pages/escuela-ifbb/escuela-ifbb';
     NoticiasInternacionalesPage,
     SaludBienestarPage,
     EscuelaIfbbPage
-    
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -66,14 +70,15 @@ import { EscuelaIfbbPage } from '../pages/escuela-ifbb/escuela-ifbb';
     NoticiasInternacionalesPage,
     SaludBienestarPage,
     EscuelaIfbbPage
-    
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    LoginServiceProvider,
-    DatosAppProvider
+    AuthService,
+    LoginService,
+    LocalStorageService
   ]
 })
 export class AppModule {}

@@ -19,8 +19,9 @@
 
         <div [ngSwitch]="opt">
             <form (submit)="doLogin()" *ngSwitchCase="'signin'">
-                <ion-input type="email" [(ngModel)]="account.email" name="email" placeholder="Usuario"></ion-input>
-                <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Clave"></ion-input>
+                <ion-input type="username" [(ngModel)]="account.username" name="username" placeholder="Usuario"></ion-input>
+                <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Clave">
+                </ion-input>
                 <div padding text-center class="singUpButton">
                     <button ion-button round color="light" icon-right>
                         {{ 'SIGN IN' }}
@@ -30,10 +31,13 @@
             </form>
 
             <form class="signup-container" (submit)="doLogin()" *ngSwitchCase="'signup'">
-                <ion-input type="text" [(ngModel)]="account.username" name="username" placeholder="Nombre de Usuario"></ion-input>
+                <ion-input type="text" [(ngModel)]="account.username" name="username" placeholder="Nombre de Usuario">
+                </ion-input>
                 <ion-input type="email" [(ngModel)]="account.email" name="email" placeholder="Email"></ion-input>
-                <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Clave"></ion-input>
-                <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Repita la Clave"></ion-input>
+                <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Clave">
+                </ion-input>
+                <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Repita la Clave">
+                </ion-input>
                 <div padding text-center class="singUpButton">
                     <button ion-button round color="light" icon-right>
                         {{ 'SIGNUP' }}
