@@ -40,6 +40,12 @@ export class LoginPage {
         )
     }
 
+    doRegister() {
+        this.loginService.register(this.account).then(
+            result => this.showAlert(result.codigo, result.descripcion)
+        )
+    }
+
     public showAlert(titulo: string, texto: string) {
         let alert = this.alertCtrl.create({
             title: titulo,

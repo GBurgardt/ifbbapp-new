@@ -30,7 +30,7 @@
                 </div>
             </form>
 
-            <form class="signup-container" (submit)="doLogin()" *ngSwitchCase="'signup'">
+            <form class="signup-container" (submit)="doRegister()" *ngSwitchCase="'signup'">
                 <ion-input type="text" [(ngModel)]="account.username" name="username" placeholder="Nombre de Usuario">
                 </ion-input>
                 <ion-input type="email" [(ngModel)]="account.email" name="email" placeholder="Email"></ion-input>

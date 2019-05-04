@@ -27,4 +27,9 @@ export class LoginService {
                 return err.error.control
             })
 
+    register = (account) =>
+        this.authService.register(account.username, account.email, account.password).toPromise()
+            .then((resp: any) => resp.control)
+            .catch(err => err.error.control)
+
 }
