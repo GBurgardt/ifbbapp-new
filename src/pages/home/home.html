@@ -3,7 +3,7 @@
         <div class="menu-container">
             <i class="fas fa-bars"(click)="openMenu($event)"></i>
         </div>
-        
+
         <div class="custom-search">
             <i class="fas fa-search"></i>
             <ion-input type="text"></ion-input>
@@ -16,9 +16,9 @@
     </div>
 </ion-header>
 
-<ion-content padding> 
+<ion-content padding>
     <div class="header">
-        <ion-tabs  swipeTab (ionChange)="transition($event)" (onTabChange)="onTabChange($event)" #myTabs tabsPlacement="top">
+        <ion-tabs  swipeTab (ionChange)="transition($event)" (onTabChange)="onTabChange($event)" #myTabs tabsPlacement="bottom">
             <ion-tab tabIcon="heart" [root]="saludBienestar"></ion-tab>
             <ion-tab tabIcon="paper" [root]="news"></ion-tab>
             <ion-tab tabIcon="trophy" [root]="torneos"></ion-tab>

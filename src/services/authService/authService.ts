@@ -29,7 +29,7 @@ export class AuthService {
             { nombreUsuario, mail },
             {
                 headers: new HttpHeaders({
-                    'clave': crypto.MD5(clave).toString(),
+                    'clave': clave,
                     'Content-Type': 'application/json',
                 })
             }
