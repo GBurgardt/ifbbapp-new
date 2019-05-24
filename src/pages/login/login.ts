@@ -31,8 +31,9 @@ export class LoginPage {
     }
 
     doLogin() {
+        // this.refrescar();
 
-
+        // TODO: Comentado para test
         this.loginService.login(this.account).then(
             result => result.codigo === 'OK' ?
                 this.refrescar() :

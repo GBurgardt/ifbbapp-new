@@ -41,7 +41,7 @@ page-home {
                 height: 20px;
                 font-size: 1.5rem;
             }
-    
+
             > input {
                 margin: 1px;
             }
@@ -65,7 +65,8 @@ page-home {
     }
 
     .fixed-content, .scroll-content {
-        margin-top: 44px !important;
+        // margin-top: 44px !important;
+        margin-top: 24px !important;
     }
 
 
