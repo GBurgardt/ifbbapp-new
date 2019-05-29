@@ -39,8 +39,8 @@ export class MyApp {
       { title: 'Mis Torneos', icon : 'trophy', component: MisTorneosPage },
       { title: 'Noticias Internacionales', icon : 'globe', component: NoticiasInternacionalesPage },
       { title: 'Escuela IFBB', icon : 'aperture', component: EscuelaIfbbPage },
-      { title: 'IFBB', icon : 'exit', component: IfbbPage },
-      { title: 'Acerca', icon : 'information-circle', component: AcercaPage }
+      { title: 'IFBB', icon : 'information-circle', component: IfbbPage },
+      { title: 'Salir', icon : 'exit', component: LoginPage }
     ];
 
   }
@@ -55,10 +55,10 @@ export class MyApp {
   }
 
   openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
+
     this.nav.push(page.component);
+
   }
 
-  
+
 }

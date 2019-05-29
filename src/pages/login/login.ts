@@ -17,9 +17,7 @@ export class LoginPage {
         password: ''
     };
 
-    // Our translated text strings
-    private loginErrorString: string;
-    private opt: string = 'signin';
+    isLoading: boolean = true;
 
     constructor(
         public menuCtrl: MenuController,
@@ -31,14 +29,20 @@ export class LoginPage {
     }
 
     doLogin() {
-        // this.refrescar();
+        this.isLoading = true;
 
-        // TODO: Comentado para test
-        this.loginService.login(this.account).then(
-            result => result.codigo === 'OK' ?
-                this.refrescar() :
-                this.showAlert("Error", result.descripcion)
-        )
+        this.loginService.login(this.account)
+            .then(
+                result => {
+                    if (result.codigo === 'OK') {
+                        this.isLoading = false;
+                        this.navCtrl.setRoot('HomePage');
+                    } else {
+
+                        this.showAlert("Error", result.descripcion)
+                    }
+                }
+            )
     }
 
     doRegister() {
@@ -54,9 +58,5 @@ export class LoginPage {
             buttons: ['OK']
         });
         alert.present();
-    }
-
-    refrescar() {
-        this.navCtrl.setRoot('HomePage');
     }
 }
