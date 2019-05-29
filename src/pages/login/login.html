@@ -23,12 +23,15 @@
                 <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="Clave">
                 </ion-input>
                 <div padding text-center class="singUpButton">
-                    <button *ngIf="!isLoading" ion-button round color="light" icon-right>
-                        SIGN IN
-                        <ion-icon name="log-in"></ion-icon>
-                    </button>
-                    <button *ngIf="isLoading" ion-button round color="light" icon-right>
-                        <i class="fas fa-spinner fa-spin"></i>
+                    <button ion-button round color="light" icon-right>
+                        <div *ngIf="!isLoading">
+                            SIGN IN
+                            <ion-icon name="log-in"></ion-icon>
+                        </div>
+                        <div *ngIf="isLoading">
+
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
                     </button>
                 </div>
             </form>

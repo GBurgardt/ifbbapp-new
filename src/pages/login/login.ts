@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, MenuController, AlertController } from 'ionic-angular';
-import { AuthService } from '../../services/authService/authService';
+import {  NavController, MenuController, AlertController } from 'ionic-angular';
 import { LoginService } from '../../services/loginService/loginService';
+import { HomePage } from '../home/home';
 
-@IonicPage()
+
 @Component({
     selector: 'page-login',
     templateUrl: 'login.html'
@@ -17,7 +17,7 @@ export class LoginPage {
         password: ''
     };
 
-    isLoading: boolean = true;
+    isLoading: boolean = false;
 
     constructor(
         public menuCtrl: MenuController,
@@ -36,7 +36,7 @@ export class LoginPage {
                 result => {
                     if (result.codigo === 'OK') {
                         this.isLoading = false;
-                        this.navCtrl.setRoot('HomePage');
+                        this.navCtrl.setRoot(HomePage);
                     } else {
 
                         this.showAlert("Error", result.descripcion)

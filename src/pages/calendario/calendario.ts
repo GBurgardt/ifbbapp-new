@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {  NavController, NavParams } from 'ionic-angular';
 
 
-@IonicPage()
+
 @Component({
   selector: 'page-calendario',
   templateUrl: 'calendario.html',
@@ -17,8 +17,8 @@ export class CalendarioPage {
   currentMonth: any;
   currentYear: any;
   currentDate: any;
-  
-  constructor(public navCtrl: NavController, public navParams: NavParams) { 
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewWillEnter() {
@@ -39,27 +39,27 @@ export class CalendarioPage {
     } else {
       this.currentDate = 999;
     }
-  
+
     var firstDayThisMonth = new Date(this.date.getFullYear(), this.date.getMonth(), 1).getDay();
     var prevNumOfDays = new Date(this.date.getFullYear(), this.date.getMonth(), 0).getDate();
     for(var i = prevNumOfDays-(firstDayThisMonth-1); i <= prevNumOfDays; i++) {
       this.daysInLastMonth.push(i);
     }
-  
+
     var thisNumOfDays = new Date(this.date.getFullYear(), this.date.getMonth()+1, 0).getDate();
-    for (var i = 0; i < thisNumOfDays; i++) {
-      this.daysInThisMonth.push(i+1);
+    for (var j = 0; j < thisNumOfDays; j++) {
+      this.daysInThisMonth.push(j+1);
     }
-  
+
     var lastDayThisMonth = new Date(this.date.getFullYear(), this.date.getMonth()+1, 0).getDay();
-    var nextNumOfDays = new Date(this.date.getFullYear(), this.date.getMonth()+2, 0).getDate();
-    for (var i = 0; i < (6-lastDayThisMonth); i++) {
-      this.daysInNextMonth.push(i+1);
+    // var nextNumOfDays = new Date(this.date.getFullYear(), this.date.getMonth()+2, 0).getDate();
+    for (var k = 0; k < (6-lastDayThisMonth); k++) {
+      this.daysInNextMonth.push(k+1);
     }
     var totalDays = this.daysInLastMonth.length+this.daysInThisMonth.length+this.daysInNextMonth.length;
     if(totalDays<36) {
-      for(var i = (7-lastDayThisMonth); i < ((7-lastDayThisMonth)+7); i++) {
-        this.daysInNextMonth.push(i);
+      for(var n = (7-lastDayThisMonth); n < ((7-lastDayThisMonth)+7); n++) {
+        this.daysInNextMonth.push(n);
       }
     }
   }

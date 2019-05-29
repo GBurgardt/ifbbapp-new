@@ -26,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from '../services/authService/authService';
 import { LoginService } from '../services/loginService/loginService';
 import { LocalStorageService } from '../services/localStorageService/localStorageService';
+import { HomePage } from '../pages/home/home';
+import { SwipeTabDirective } from '../directives/swipe-tab.directive';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { LocalStorageService } from '../services/localStorageService/localStorag
     InscripcionesPage,
     NoticiasInternacionalesPage,
     SaludBienestarPage,
-    EscuelaIfbbPage
+    EscuelaIfbbPage,
+    HomePage,
+    SwipeTabDirective
 
   ],
   imports: [
@@ -69,8 +73,8 @@ import { LocalStorageService } from '../services/localStorageService/localStorag
     InscripcionesPage,
     NoticiasInternacionalesPage,
     SaludBienestarPage,
-    EscuelaIfbbPage
-
+    EscuelaIfbbPage,
+    HomePage
   ],
   providers: [
     StatusBar,

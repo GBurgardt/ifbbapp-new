@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
+import {  NavController, NavParams, App } from 'ionic-angular';
 import { InscripcionesPage } from '../inscripciones/inscripciones';
 
 
-@IonicPage()
+
 @Component({
   selector: 'page-torneos',
   templateUrl: 'torneos.html',
 })
 export class TorneosPage {
 
-  items: Array<{titulo: string, imagen: string, fecha: string, lugar: string}>;  
+  items: Array<{titulo: string, imagen: string, fecha: string, lugar: string}>;
   inscripciones;
-  
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public app: App) {
     this.items = [];
     this.items.push({

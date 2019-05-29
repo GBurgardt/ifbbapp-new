@@ -1,7 +1,7 @@
 
 import { TorneosPage } from './../torneos/torneos';
 import { Component } from '@angular/core';
-import { NavController, IonicPage, MenuController } from 'ionic-angular';
+import { NavController, MenuController, IonicPage } from 'ionic-angular';
 import { NewsPage } from '../news/news';
 import { PromosPage } from '../promos/promos';
 import { CursosPage } from '../cursos/cursos';
@@ -11,48 +11,52 @@ import { Tabs } from 'ionic-angular';
 import { SwipeTabDirective } from '../../directives/swipe-tab.directive';
 import { SaludBienestarPage } from '../salud-bienestar/salud-bienestar';
 
-@IonicPage()
+// @IonicPage(
+//     {
+//         name: 'home-page'
+//     }
+// )
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+    selector: 'page-home',
+    templateUrl: 'home.html'
 })
 export class HomePage {
-  @ViewChild(SwipeTabDirective) swipeTabDirective: SwipeTabDirective;
-  @ViewChild('myTabs') tabRef: Tabs;
-  
-  news;
-  promos;
-  cursos;
-  user;
-  torneos;
-  saludBienestar;
+    @ViewChild(SwipeTabDirective) swipeTabDirective: SwipeTabDirective;
+    @ViewChild('myTabs') tabRef: Tabs;
 
-  constructor(public navCtrl: NavController, public menuController : MenuController) {
-    this.news = NewsPage;
-    this.promos = PromosPage;
-    this.cursos = CursosPage;
-    this.user = UserPage;
-    this.torneos = TorneosPage;
-    this.saludBienestar = SaludBienestarPage;
-  }
+    news;
+    promos;
+    cursos;
+    user;
+    torneos;
+    saludBienestar;
 
-  transition($event) {
-    this.swipeTabDirective.onTabInitialized($event.index);
-}
+    constructor(public navCtrl: NavController, public menuController: MenuController) {
+        this.news = NewsPage;
+        this.promos = PromosPage;
+        this.cursos = CursosPage;
+        this.user = UserPage;
+        this.torneos = TorneosPage;
+        this.saludBienestar = SaludBienestarPage;
+    }
 
-  onTabChange(index: number) {
-    this.tabRef.select(index);
-  }
+    transition($event) {
+        this.swipeTabDirective.onTabInitialized($event.index);
+    }
 
-  ionViewDidLoad() {
-    this.menuController.enable(true)
-  }
+    onTabChange(index: number) {
+        this.tabRef.select(index);
+    }
 
-  goToUserPage(event : any) {
-    this.navCtrl.push(this.user);
-  }
+    ionViewDidLoad() {
+        this.menuController.enable(true)
+    }
 
-  openMenu(event : any) {
-    this.menuController.open();
-  }
+    goToUserPage(event: any) {
+        this.navCtrl.push(this.user);
+    }
+
+    openMenu(event: any) {
+        this.menuController.open();
+    }
 }
