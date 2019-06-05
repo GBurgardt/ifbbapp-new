@@ -38,17 +38,18 @@ export class LoginPage {
                         this.isLoading = false;
                         this.navCtrl.setRoot(HomePage);
                     } else {
-
                         this.showAlert("Error", result.descripcion)
                     }
                 }
             )
+
     }
 
     doRegister() {
-        this.loginService.register(this.account).then(
-            result => this.showAlert(result.codigo, result.descripcion)
-        )
+        this.loginService.register(this.account)
+            .then(
+                result => this.showAlert(result.codigo, result.descripcion)
+            )
     }
 
     public showAlert(titulo: string, texto: string) {

@@ -26,7 +26,10 @@ export class AuthService {
     register = (nombreUsuario, mail, clave) =>
         this.httpClient.post(
             `${environment.WS_URL}/usuarios`,
-            { nombreUsuario, mail },
+            {
+                nombreUsuario,
+                mail
+            },
             {
                 headers: new HttpHeaders({
                     'clave': clave,
@@ -34,6 +37,10 @@ export class AuthService {
                 })
             }
         )
+
+    getNews = () => this.httpClient.get(
+        `${environment.WS_URL}/news`
+    )
 
 
 }

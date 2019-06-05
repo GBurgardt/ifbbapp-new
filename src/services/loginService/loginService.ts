@@ -15,6 +15,7 @@ export class LoginService {
         this.authService.login(account.username, account.password).toPromise()
             .then(
                 (resp: any) => {
+
                     // Si resp es OK, guardo token en localStorage
                     if (resp.control && resp.control.codigo === 'OK') {
                         this.localStorageService.setObject('token', resp.datos.acceso.token);
@@ -23,13 +24,14 @@ export class LoginService {
                     return resp.control;
                 }
             )
-            .catch(err => {
-                return err.error.control
-            })
+            .catch(err => err.error.control)
+
 
     register = (account) =>
         this.authService.register(account.username, account.email, account.password).toPromise()
-            .then((resp: any) => resp.control)
+            .then(
+                (resp: any) => resp.control
+            )
             .catch(err => err.error.control)
 
 }
