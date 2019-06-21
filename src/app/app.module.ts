@@ -25,6 +25,7 @@ import { EscuelaIfbbPage } from '../pages/escuela-ifbb/escuela-ifbb';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from '../services/authService/authService';
 import { LoginService } from '../services/loginService/loginService';
+import { NewsService } from '../services/newsService/newsService';
 import { LocalStorageService } from '../services/localStorageService/localStorageService';
 import { HomePage } from '../pages/home/home';
 import { SwipeTabDirective } from '../directives/swipe-tab.directive';
@@ -82,7 +83,8 @@ import { SwipeTabDirective } from '../directives/swipe-tab.directive';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthService,
     LoginService,
-    LocalStorageService
+    LocalStorageService,
+    NewsService
   ]
 })
 export class AppModule {}

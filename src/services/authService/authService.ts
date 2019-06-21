@@ -38,9 +38,14 @@ export class AuthService {
             }
         )
 
-    getNews = () => this.httpClient.get(
-        `${environment.WS_URL}/news`
-    )
-
+    getNews = (token) => {
+        //  http://165.22.198.233:8080/IfbbAppRest-0.1alpha/ws/noticias?pedido=1&categoria=1
+        return this.httpClient.get(
+            `${environment.WS_URL}/noticias`,
+            {
+                headers: new HttpHeaders({'token': token})
+            }
+        );
+    }
 
 }
