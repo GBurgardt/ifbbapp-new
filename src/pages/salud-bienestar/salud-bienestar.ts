@@ -9,6 +9,8 @@ import { NewsService } from '../../services/newsService/newsService';
  * Ionic pages and navigation.
  */
 
+// Definir clase "noticias"
+// Qué hago en caso de error con getNews?
 
 @Component({
   selector: 'page-salud-bienestar',
@@ -16,15 +18,32 @@ import { NewsService } from '../../services/newsService/newsService';
 })
 export class SaludBienestarPage {
 
+  noticias: any[];
+
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     private newsService: NewsService
   ) { }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SaludBienestarPage');
-    this.newsService.getnews();
+    this.newsService.getnews()
+      .then(
+        resp => {
+          if (resp.control.codigo === 'OK') {
+            this.noticias = resp.arraydatos;
+          } else {
+            // this.showAlert("Error", resp.descripcion)
+          }
+        }
+      )
+  }
+
+  ionViewWillEnter() {
+    // Esta rutina corre incluso si la página ya está en caché
+    // DidLoad lo hace solo la primera vez al cachearla en memoria
+    // Pasarlo a ionViewDidLoad para produccion
   }
 
 }

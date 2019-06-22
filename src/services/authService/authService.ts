@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from '../../constants/environment';
 
 import * as crypto from 'crypto-js';
@@ -39,11 +39,14 @@ export class AuthService {
         )
 
     getNews = (token) => {
-        //  http://165.22.198.233:8080/IfbbAppRest-0.1alpha/ws/noticias?pedido=1&categoria=1
+        // Softcodear los parametros app y '1'
         return this.httpClient.get(
             `${environment.WS_URL}/noticias`,
             {
-                headers: new HttpHeaders({'token': token})
+                headers: new HttpHeaders({ 'token': token }),
+                params: new HttpParams()
+                    .set('pedido', 'app')
+                    .set('categoria', '1')
             }
         );
     }
