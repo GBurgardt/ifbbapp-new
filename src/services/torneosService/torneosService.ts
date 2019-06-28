@@ -4,15 +4,15 @@ import { LocalStorageService } from '../localStorageService/localStorageService'
 
 
 @Injectable()
-export class NewsService {
+export class TorneosService {
 
     constructor(
         private authService: AuthService,
         private localStorageService: LocalStorageService
     ) { }
 
-    getNews = () =>
-        this.authService.getNews(this.localStorageService.getObject('token'))
+    getTorneos = () =>
+        this.authService.getTorneos(this.localStorageService.getObject('token'))
             .toPromise()
             .then(
                 (resp: any) => {

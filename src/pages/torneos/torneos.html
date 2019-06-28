@@ -1,8 +1,42 @@
 <ion-content padding>
+
+    <ion-card class="card-iffb" *ngFor="let torneo of items">
+        <img src="../../assets/imgs/{{torneo.imagen}}" />
+        <ion-card-content>
+            <ion-card-title>
+                {{torneo.titulo}}
+            </ion-card-title>
+            <div class="more-data">
+
+                <div class="more-data">
+                    <p class="data-element">
+                        <ion-icon class="icono" name="calendar"></ion-icon>
+                        {{torneo.fecha}}
+                    </p>
+                    <p class="data-element">
+                        <ion-icon class="icono" name="pin"></ion-icon>
+                        {{torneo.lugar}}
+                    </p>
+                </div>
+
+            </div>
+        </ion-card-content>
+
+        <div class="options-container">
+            <button (click)="doInscripcion($event, torneo)" class="btn-inscribirse" ion-button small>
+                Solicitar Inscripcion
+            </button>
+        </div>
+
+    </ion-card>
+
+</ion-content>
+<!-- 
+<ion-content padding>
     <ion-list>
         <ion-card *ngFor="let item of items" class="card-iffb">
             <img src="../../assets/imgs/{{item.imagen}}" />
-        
+
             <ion-card-content>
                 <ion-card-title>
                     {{item.titulo}}
@@ -17,18 +51,18 @@
                         {{item.lugar}}
                     </p>
                 </div>
-        
+
             </ion-card-content>
-        
+
             <div class="options-container">
                 <button (click)="doInscripcion($event, item)" class="btn-inscribirse" ion-button small>
                     Solicitar Inscripcion
                 </button>
             </div>
-        
+
         </ion-card>
     </ion-list>
-</ion-content>
+</ion-content> -->
 
 <!-- <ion-card *ngFor="let item of items">      
     <ion-card-content>

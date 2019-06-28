@@ -29,7 +29,8 @@ import { NewsService } from '../services/newsService/newsService';
 import { LocalStorageService } from '../services/localStorageService/localStorageService';
 import { HomePage } from '../pages/home/home';
 import { SwipeTabDirective } from '../directives/swipe-tab.directive';
-
+import { SaludBienestarService } from '../services/saludBienestarService/saludBienestarService';
+import { TorneosService } from '../services/torneosService/torneosService';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,9 @@ import { SwipeTabDirective } from '../directives/swipe-tab.directive';
     AuthService,
     LoginService,
     LocalStorageService,
-    NewsService
+    NewsService,
+    SaludBienestarService,
+    TorneosService
   ]
 })
 export class AppModule {}

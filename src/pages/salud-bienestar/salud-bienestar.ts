@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { NewsService } from '../../services/newsService/newsService';
+import { SaludBienestarService } from '../../services/saludBienestarService/saludBienestarService';
 
 /**
  * Generated class for the SaludBienestarPage page.
@@ -9,41 +10,37 @@ import { NewsService } from '../../services/newsService/newsService';
  * Ionic pages and navigation.
  */
 
+
+// CRISTIAN-COMMENT
 // Definir clase "noticias"
 // Qué hago en caso de error con getNews?
 
-@Component({
+@Component({  
   selector: 'page-salud-bienestar',
   templateUrl: 'salud-bienestar.html',
 })
 export class SaludBienestarPage {
 
-  noticias: any[];
+  saludBienestar: any[];
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private newsService: NewsService
+    private saludBienestarService: SaludBienestarService
   ) { }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SaludBienestarPage');
-    this.newsService.getnews()
+    this.saludBienestarService.getSaludBienestar()
       .then(
         resp => {
           if (resp.control.codigo === 'OK') {
-            this.noticias = resp.arraydatos;
+            this.saludBienestar = resp.arraydatos;
           } else {
             // this.showAlert("Error", resp.descripcion)
           }
         }
       )
-  }
-
-  ionViewWillEnter() {
-    // Esta rutina corre incluso si la página ya está en caché
-    // DidLoad lo hace solo la primera vez al cachearla en memoria
-    // Pasarlo a ionViewDidLoad para produccion
   }
 
 }

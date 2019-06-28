@@ -38,8 +38,42 @@ export class AuthService {
             }
         )
 
+    // CRISTIAN-COMMENT
+    // Estudiar que pasa si el backend no respodne. Incorporar un ngIf            
+
     getNews = (token) => {
+        // CRISTIAN-COMMENT
         // Softcodear los parametros app y '1'
+        return this.httpClient.get(
+            `${environment.WS_URL}/noticias`,
+            {
+                headers: new HttpHeaders({ 'token': token }),
+                params: new HttpParams()
+                    .set('pedido', 'app')
+                    .set('categoria', '1')
+            }
+        );
+    }
+    
+    getSaludBienestar = (token) => {
+        // CRISTIAN-COMMENT
+        // Softcodear los parametros app y '1'
+        // Copiado de getNews, editar según backend
+        return this.httpClient.get(
+            `${environment.WS_URL}/noticias`,
+            {
+                headers: new HttpHeaders({ 'token': token }),
+                params: new HttpParams()
+                    .set('pedido', 'app')
+                    .set('categoria', '1')
+            }
+        );
+    }
+
+    getTorneos = (token) => {
+        // CRISTIAN-COMMENT
+        // Softcodear los parametros app y '1'
+        // Copiado de getNews, editar según backend
         return this.httpClient.get(
             `${environment.WS_URL}/noticias`,
             {
