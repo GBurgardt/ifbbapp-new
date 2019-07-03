@@ -47,24 +47,26 @@ export class SaludBienestarPage {
 
   doInfinite(infiniteScroll) {
     console.log('Begin async operation');
-    console.log(this.saludBienestar);
 
     setTimeout(() => {
-      // this.saludBienestarService.getSaludBienestar()
-      //   .then(
-      //     resp => {
-      //       if (resp.control.codigo === 'OK') {
-      //         this.saludBienestar = resp.arraydatos;        // Va un push acá, no un seteo
-      //       } else {
-      //         // this.showAlert("Error", resp.descripcion)
-      //       }
-      //     }
-      //   )
+      this.saludBienestarService.getSaludBienestar()
+        .then(
+          resp => {
+            if (resp.control.codigo === 'OK') {
+              resp.arraydatos.forEach(element => {
+                this.saludBienestar.push(element);
+                console.log(this.saludBienestar);
+              });
+            } else {
+              // this.showAlert("Error", resp.descripcion)
+            }
+          }
+        )
 
       console.log('Async operation has ended');
       infiniteScroll.complete();
     }, 500);
   }
-  
+
 
 }

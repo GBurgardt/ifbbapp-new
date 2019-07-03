@@ -53,11 +53,35 @@ export class TorneosPage {
         resp => {
           if (resp.control.codigo === 'OK') {
             this.torneos = resp.arraydatos;
+            console.log(this.torneos);
           } else {
             // this.showAlert("Error", resp.descripcion)
           }
         }
       )
+  }
+  
+  doInfinite(infiniteScroll) {
+    console.log('Begin async operation');
+
+    setTimeout(() => {
+      this.torneosService.getTorneos()
+        .then(
+          resp => {
+            if (resp.control.codigo === 'OK') {
+              resp.arraydatos.forEach(element => {
+                this.torneos.push(element);
+                console.log(this.torneos);
+              });
+            } else {
+              // this.showAlert("Error", resp.descripcion)
+            }
+          }
+        )
+
+      console.log('Async operation has ended');
+      infiniteScroll.complete();
+    }, 500);
   }
 
 }

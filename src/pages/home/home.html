@@ -1,7 +1,7 @@
 <ion-header>
     <div class="search-container">
         <div class="menu-container">
-            <i class="fas fa-bars"(click)="openMenu($event)"></i>
+            <i class="fas fa-bars" (click)="openMenu($event)"></i>
         </div>
 
         <div class="custom-search">
@@ -18,13 +18,13 @@
 
 <ion-content padding>
     <div class="header">
-        <ion-tabs  swipeTab (ionChange)="transition($event)" (onTabChange)="onTabChange($event)" #myTabs tabsPlacement="bottom">
-            <ion-tab tabIcon="heart" [root]="saludBienestar"></ion-tab>
-            <ion-tab tabIcon="paper" [root]="news"></ion-tab>
-            <ion-tab tabIcon="trophy" [root]="torneos"></ion-tab>
-            <ion-tab tabIcon="basket" [root]="promos"></ion-tab>
-            <ion-tab tabIcon="list-box" [root]="cursos"></ion-tab>
+        <ion-tabs scrollable swipeTab (ionChange)="transition($event)" (onTabChange)="onTabChange($event)" #myTabs tabsPlacement="bottom">
+            <ion-tab tabIcon="heart"    [root]="saludBienestar"> </ion-tab>
+            <ion-tab tabIcon="paper"    [root]="news">           </ion-tab>
+            <ion-tab tabIcon="trophy"   [root]="torneos">        </ion-tab>
+            <ion-tab tabIcon="basket"   [root]="promos">         </ion-tab>
+            <ion-tab tabIcon="list-box" [root]="cursos">         </ion-tab>
         </ion-tabs>
-    </div>
-
+    </div>  
+    
 </ion-content>
