@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID } from '@angular/core';
 import { NavController, NavParams, App } from 'ionic-angular';
 import { InscripcionesPage } from '../inscripciones/inscripciones';
 import { TorneosService } from '../../services/torneosService/torneosService';
+import { registerLocaleData } from '@angular/common';
+import localeEsAr from '@angular/common/locales/es-AR';
+
+registerLocaleData(localeEsAr, 'es-Ar');
 
 @Component({
   selector: 'page-torneos',

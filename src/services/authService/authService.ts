@@ -39,7 +39,7 @@ export class AuthService {
         )
 
     // CRISTIAN-COMMENT
-    // Estudiar que pasa si el backend no respodne. Incorporar un ngIf            
+    // Estudiar que pasa si el backend no responde. Incorporar un *ngIf            
 
     getNews = (token) => {
         // CRISTIAN-COMMENT
@@ -75,12 +75,11 @@ export class AuthService {
         // Softcodear los parametros app y '1'
         // Copiado de getNews, editar según backend
         return this.httpClient.get(
-            `${environment.WS_URL}/noticias`,
+            `${environment.WS_URL}/torneos`,
             {
                 headers: new HttpHeaders({ 'token': token }),
                 params: new HttpParams()
                     .set('pedido', 'app')
-                    .set('categoria', '1')
             }
         );
     }
