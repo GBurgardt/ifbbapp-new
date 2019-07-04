@@ -13,10 +13,10 @@ registerLocaleData(localeEsAr, 'es-Ar');
 })
 export class TorneosPage {
 
-  items: Array<{ titulo: string, imagen: string, fecha: string, lugar: string }>;
+  // items: Array<{ titulo: string, imagen: string, fecha: string, lugar: string }>;
   torneos: any[];
   inscripciones;
- 
+
   // CRISTIAN-COMMENT
   // Una vez cargados estos items en el backend borrar la variable items y reemplazar por torneos
   // Luego definir una clase torneo y reemplazarla
@@ -27,20 +27,6 @@ export class TorneosPage {
     public app: App,
     private torneosService: TorneosService
   ) {
-    this.items = [];
-    this.items.push({
-      titulo: 'Campeonato de Apertura 2019',
-      imagen: 'torneo1.jpg',
-      fecha: ' Domingo 7 de Abril',
-      lugar: ' San Justo, Buenos Aires, Argentina'
-    });
-    this.items.push({
-      titulo: 'IV Juegos Sudamericanos de Playa',
-      imagen: 'torneo2.jpg',
-      fecha: ' Marzo del 20 al 23',
-      lugar: ' Rosario, Santa Fe, Argentina'
-    });
-
     this.inscripciones = InscripcionesPage;
   }
 
@@ -64,7 +50,7 @@ export class TorneosPage {
         }
       )
   }
-  
+
   doInfinite(infiniteScroll) {
     console.log('Begin async operation');
 

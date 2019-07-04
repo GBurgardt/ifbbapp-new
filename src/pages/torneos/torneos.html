@@ -11,8 +11,7 @@
                 <div class="more-data">
                     <p class="data-element">
                         <ion-icon class="icono" name="calendar"></ion-icon>
-                        <!-- {{torneo.fechaInicio | date:'fullDate' }} -->
-                        {{torneo.fechaInicio | date:'EEEE d a MMM' }}
+                        {{torneo.fechaInicio | date:'EEEE d MMMM' | titlecase }}
                     </p>
                     <p class="data-element">
                         <ion-icon class="icono" name="pin"></ion-icon>
@@ -30,36 +29,6 @@
         </div>
 
     </ion-card>
-<!-- 
-    <ion-card class="card-iffb" *ngFor="let torneo of items">
-        <img src="../../assets/imgs/{{torneo.imagen}}"/>
-        <ion-card-content>
-            <ion-card-title>
-                {{torneo.titulo}}
-            </ion-card-title>
-            <div class="more-data">
-
-                <div class="more-data">
-                    <p class="data-element">
-                        <ion-icon class="icono" name="calendar"></ion-icon>
-                        {{torneo.fechaInicio}}
-                    </p>
-                    <p class="data-element">
-                        <ion-icon class="icono" name="pin"></ion-icon>
-                        {{torneo.lugar}}
-                    </p>
-                </div>
-
-            </div>
-        </ion-card-content>
-
-        <div class="options-container">
-            <button (click)="doInscripcion($event, torneo)" class="btn-inscribirse" ion-button small>
-                Solicitar Inscripcion
-            </button>
-        </div>
-
-    </ion-card> -->
 
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
         <ion-infinite-scroll-content>
