@@ -1,24 +1,88 @@
-page-torneos {
+page-salud-bienestar {
+
+    ion-card {
+        position: relative;
+        text-align: center;    
+        border-radius: 13px;   
+      }
+
     ion-card-content.card-content.card-content-md {
         display: flex;
         flex-direction: column;
-        padding: 3px 16px;
         // background: color($colors, grey);
 
-
         .card-content {
-            display: block;
-            text-align: -webkit-auto;
-            margin-top: 7px;
+            display: flex;
 
             > button {
                 background: color($colors, primario);
             }
         }
     }
-
+    
+    .card-md {
+        margin: 10px;
+        border-radius: 13px;
+    }
+    
+    .card-title {
+        width: 100%;   
+        .card-title-text {
+            font-size: 4.5vw;
+            font-weight: bold;
+            color: #353232;
+            width: 100%;
+        }
+    }
+   
     .card-title-md {
+        // display: block;
+        // font-size: 2.1rem;
+        // line-height: 1.2;
+        // /* color: #222; */
+        // /* margin: 2px 0; */
+        // padding: 3px 0;
         text-align: center;
         // font-weight: bold;
     }
+    
+    .card-subtitle {
+        font-size: 1.0em;
+        width: 100%;
+        color: #000;
+    }
+
+    .button-md-danger {
+        color: #000;
+        background: color($colors, primario);
+        font-size: 1.5rem;
+    }
+
+    .card-md {
+        background: color($colors, grey);
+    }
+
+    .button-round-md {
+        border-radius: 64px;
+        padding: 0 1rem; 
+    }
+
+    .button-md {
+        border-radius: 64px;
+        overflow: hidden;
+        height: 2.7rem;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+    .optionsContainer {
+        display: flex;
+    }
+
+    .button-full-md {
+        margin-left: 9px;
+        width: inherit;
+    }
+
 }
+
+

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { NewsService } from '../../services/newsService/newsService';
 import { SaludBienestarService } from '../../services/saludBienestarService/saludBienestarService';
-import { SaludBienestarNutricionPage } from '../salud-bienestar-nutricion/salud-bienestar-nutricion';
 import { SaludBienestarEntrenamientoPage } from '../salud-bienestar-entrenamiento/salud-bienestar-entrenamiento';
 import { SaludBienestarSuplementosPage } from '../salud-bienestar-suplementos/salud-bienestar-suplementos';
 
@@ -20,13 +19,12 @@ import { SaludBienestarSuplementosPage } from '../salud-bienestar-suplementos/sa
 // Qué hago en caso de error con getNews?
 
 @Component({
-  selector: 'page-salud-bienestar',
-  templateUrl: 'salud-bienestar.html',
+  selector: 'page-salud-bienestar-nutricion',
+  templateUrl: 'salud-bienestar-nutricion.html',
 })
-export class SaludBienestarPage {
+export class SaludBienestarNutricionPage {
 
   saludBienestar: any[];
-  saludBienestarNutricion;
   saludBienestarEntrenamiento;
   saludBienestarSuplementos;
 
@@ -34,14 +32,13 @@ export class SaludBienestarPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     private saludBienestarService: SaludBienestarService
-  ) { 
-    this.saludBienestarNutricion = SaludBienestarNutricionPage;
+  ) {
     this.saludBienestarEntrenamiento = SaludBienestarEntrenamientoPage;
     this.saludBienestarSuplementos = SaludBienestarSuplementosPage;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SaludBienestarPage');
+    console.log('ionViewDidLoad SaludBienestarNutricionPage');
     this.saludBienestarService.getSaludBienestar()
       .then(
         resp => {
@@ -55,9 +52,7 @@ export class SaludBienestarPage {
       )
   }
 
-  irASaludBienestarNutricion() {
-    this.navCtrl.push(this.saludBienestarNutricion);
-  };
+  irASaludBienestarNutricion() { };
 
   irASaludBienestarEntrenamiento() {
     this.navCtrl.push(this.saludBienestarEntrenamiento);
@@ -89,7 +84,6 @@ export class SaludBienestarPage {
       infiniteScroll.complete();
     }, 500);
   }
-
 
 
 }

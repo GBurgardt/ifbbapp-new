@@ -1,4 +1,11 @@
 page-salud-bienestar {
+
+    ion-card {
+        position: relative;
+        text-align: center;    
+        border-radius: 13px;   
+      }
+
     ion-card-content.card-content.card-content-md {
         display: flex;
         flex-direction: column;
@@ -10,6 +17,21 @@ page-salud-bienestar {
             > button {
                 background: color($colors, primario);
             }
+        }
+    }
+    
+    .card-md {
+        margin: 10px;
+        border-radius: 13px;
+    }
+    
+    .card-title {
+        width: 100%;   
+        .card-title-text {
+            font-size: 4.5vw;
+            font-weight: bold;
+            color: #353232;
+            width: 100%;
         }
     }
    
@@ -24,4 +46,43 @@ page-salud-bienestar {
         // font-weight: bold;
     }
     
+    .card-subtitle {
+        font-size: 1.0em;
+        width: 100%;
+        color: #000;
+    }
+
+    .button-md-danger {
+        color: #000;
+        background: color($colors, primario);
+        font-size: 1.5rem;
+    }
+
+    .card-md {
+        background: color($colors, grey);
+    }
+
+    .button-round-md {
+        border-radius: 64px;
+        padding: 0 1rem; 
+    }
+
+    .button-md {
+        border-radius: 64px;
+        overflow: hidden;
+        height: 2.7rem;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+    .optionsContainer {
+        display: flex;
+    }
+
+    .button-full-md {
+        margin-left: 9px;
+        width: inherit;
+    }
+
 }
+
+

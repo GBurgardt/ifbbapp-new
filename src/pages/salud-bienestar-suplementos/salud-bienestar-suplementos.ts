@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { NewsService } from '../../services/newsService/newsService';
 import { SaludBienestarService } from '../../services/saludBienestarService/saludBienestarService';
-import { SaludBienestarNutricionPage } from '../salud-bienestar-nutricion/salud-bienestar-nutricion';
 import { SaludBienestarEntrenamientoPage } from '../salud-bienestar-entrenamiento/salud-bienestar-entrenamiento';
-import { SaludBienestarSuplementosPage } from '../salud-bienestar-suplementos/salud-bienestar-suplementos';
+import { SaludBienestarNutricionPage } from '../salud-bienestar-nutricion/salud-bienestar-nutricion';
 
 
 /**
@@ -20,15 +19,14 @@ import { SaludBienestarSuplementosPage } from '../salud-bienestar-suplementos/sa
 // Qué hago en caso de error con getNews?
 
 @Component({
-  selector: 'page-salud-bienestar',
-  templateUrl: 'salud-bienestar.html',
+  selector: 'page-salud-bienestar-suplementos',
+  templateUrl: 'salud-bienestar-suplementos.html',
 })
-export class SaludBienestarPage {
+export class SaludBienestarSuplementosPage {
 
   saludBienestar: any[];
   saludBienestarNutricion;
   saludBienestarEntrenamiento;
-  saludBienestarSuplementos;
 
   constructor(
     public navCtrl: NavController,
@@ -37,11 +35,10 @@ export class SaludBienestarPage {
   ) { 
     this.saludBienestarNutricion = SaludBienestarNutricionPage;
     this.saludBienestarEntrenamiento = SaludBienestarEntrenamientoPage;
-    this.saludBienestarSuplementos = SaludBienestarSuplementosPage;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SaludBienestarPage');
+    console.log('ionViewDidLoad SaludBienestarSuplementosPage');
     this.saludBienestarService.getSaludBienestar()
       .then(
         resp => {
@@ -63,9 +60,7 @@ export class SaludBienestarPage {
     this.navCtrl.push(this.saludBienestarEntrenamiento);
   };
 
-  irASaludBienestarSuplementos() {
-    this.navCtrl.push(this.saludBienestarSuplementos);
-  };
+  irASaludBienestarSuplementos() {};
 
   doInfinite(infiniteScroll) {
     console.log('Begin async operation');
@@ -89,7 +84,6 @@ export class SaludBienestarPage {
       infiniteScroll.complete();
     }, 500);
   }
-
 
 
 }

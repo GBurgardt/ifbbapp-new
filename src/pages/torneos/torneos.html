@@ -6,20 +6,18 @@
             <ion-card-title>
                 {{torneo.titulo}}
             </ion-card-title>
+
             <div class="more-data">
-
-                <div class="more-data">
-                    <p class="data-element">
-                        <ion-icon class="icono" name="calendar"></ion-icon>
-                        {{torneo.fechaInicio | date:'EEEE d MMMM' | titlecase }}
-                    </p>
-                    <p class="data-element">
-                        <ion-icon class="icono" name="pin"></ion-icon>
-                        {{torneo.lugar}}
-                    </p>
-                </div>
-
+                <p class="data-element">
+                    <ion-icon class="icono" name="calendar"></ion-icon>
+                    {{torneo.fechaInicio | date:'EEEE d MMMM' | titlecase }}
+                </p>
+                <p class="data-element">
+                    <ion-icon class="icono" name="pin"></ion-icon>
+                    {{torneo.lugar}}
+                </p>
             </div>
+
         </ion-card-content>
 
         <div class="options-container">
