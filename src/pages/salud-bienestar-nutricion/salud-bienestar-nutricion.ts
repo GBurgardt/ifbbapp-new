@@ -39,17 +39,17 @@ export class SaludBienestarNutricionPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SaludBienestarNutricionPage');
-    this.saludBienestarService.getSaludBienestar()
-      .then(
-        resp => {
-          if (resp.control.codigo === 'OK') {
-            this.saludBienestar = resp.arraydatos;
-            console.log(this.saludBienestar);
-          } else {
-            // this.showAlert("Error", resp.descripcion)
-          }
-        }
-      )
+    // this.saludBienestarService.getSaludBienestar()
+    //   .then(
+    //     resp => {
+    //       if (resp.control.codigo === 'OK') {
+    //         this.saludBienestar = resp.arraydatos;
+    //         console.log(this.saludBienestar);
+    //       } else {
+    //         // this.showAlert("Error", resp.descripcion)
+    //       }
+    //     }
+    //   )
   }
 
   irASaludBienestarNutricion() { };
