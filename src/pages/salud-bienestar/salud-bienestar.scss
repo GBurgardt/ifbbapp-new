@@ -76,6 +76,15 @@ page-salud-bienestar {
     }
     .optionsContainer {
         display: flex;
+        justify-content: space-between;
+        > button {
+            flex-direction: row;
+            align-items: stretch;
+            width: 100%;
+            font-size: 2.0rem;
+            padding: 10px;
+            height: auto;
+        }
     }
 
     .button-full-md {

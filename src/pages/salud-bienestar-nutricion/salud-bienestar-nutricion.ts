@@ -62,28 +62,26 @@ export class SaludBienestarNutricionPage {
     this.navCtrl.push(this.saludBienestarSuplementos);
   };
 
-  doInfinite(infiniteScroll) {
-    console.log('Begin async operation');
-
-    setTimeout(() => {
-      this.saludBienestarService.getSaludBienestar()
-        .then(
-          resp => {
-            if (resp.control.codigo === 'OK') {
-              resp.arraydatos.forEach(element => {
-                this.saludBienestar.push(element);
-                console.log(this.saludBienestar);
-              });
-            } else {
-              // this.showAlert("Error", resp.descripcion)
-            }
-          }
-        )
-
-      console.log('Async operation has ended');
-      infiniteScroll.complete();
-    }, 500);
-  }
-
-
+  // doInfinite(infiniteScroll) {
+  //     console.log('Begin async operation');
+  
+  //     setTimeout(() => {
+  //       this.saludBienestarService.getSaludBienestar()
+  //         .then(
+  //           resp => {
+  //             if (resp.control.codigo === 'OK') {
+  //               resp.arraydatos.forEach(element => {
+  //                 this.saludBienestar.push(element);
+  //                 console.log(this.saludBienestar);
+  //               });
+  //             } else {
+  //               // this.showAlert("Error", resp.descripcion)
+  //             }
+  //           }
+  //         )
+  
+  //       console.log('Async operation has ended');
+  //       infiniteScroll.complete();
+  //     }, 500);
+  //   }
 }
