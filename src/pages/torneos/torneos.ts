@@ -4,6 +4,7 @@ import { InscripcionesPage } from '../inscripciones/inscripciones';
 import { TorneosService } from '../../services/torneosService/torneosService';
 import { registerLocaleData } from '@angular/common';
 import localeEsAr from '@angular/common/locales/es-AR';
+import { mockTorneos } from '../../constants/mockUpData';
 
 registerLocaleData(localeEsAr, 'es-Ar');
 
@@ -12,14 +13,8 @@ registerLocaleData(localeEsAr, 'es-Ar');
   templateUrl: 'torneos.html',
 })
 export class TorneosPage {
-
-  // items: Array<{ titulo: string, imagen: string, fecha: string, lugar: string }>;
-  torneos: any[];
+  torneos = mockTorneos;
   inscripciones;
-
-  // CRISTIAN-COMMENT
-  // Una vez cargados estos items en el backend borrar la variable items y reemplazar por torneos
-  // Luego definir una clase torneo y reemplazarla
 
   constructor(
     public navCtrl: NavController,
@@ -30,48 +25,8 @@ export class TorneosPage {
     this.inscripciones = InscripcionesPage;
   }
 
-  public doInscripcion(event: any, item: any) {
-    this.app.getRootNav().push(this.inscripciones, {
-      item: item
-    });
-  }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad TorneosPage');
-    this.torneosService.getTorneos()
-      .then(
-        resp => {
-          if (resp.control.codigo === 'OK') {
-            this.torneos = resp.arraydatos;
-            console.log(this.torneos);
-          } else {
-            // this.showAlert("Error", resp.descripcion)
-          }
-        }
-      )
-  }
-
-  doInfinite(infiniteScroll) {
-    console.log('Begin async operation');
-
-    setTimeout(() => {
-      this.torneosService.getTorneos()
-        .then(
-          resp => {
-            if (resp.control.codigo === 'OK') {
-              resp.arraydatos.forEach(element => {
-                this.torneos.push(element);
-                console.log(this.torneos);
-              });
-            } else {
-              // this.showAlert("Error", resp.descripcion)
-            }
-          }
-        )
-
-      console.log('Async operation has ended');
-      infiniteScroll.complete();
-    }, 500);
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
+import { mockCursos } from '../../constants/mockUpData';
 
 
 @Component({
@@ -7,6 +8,7 @@ import {  NavController, NavParams } from 'ionic-angular';
   templateUrl: 'cursos.html',
 })
 export class CursosPage {
+  cursos = mockCursos;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

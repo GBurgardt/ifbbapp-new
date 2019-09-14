@@ -1,15 +1,15 @@
 <ion-content padding>
 
-    <ion-card class="card-iffb" *ngFor="let noticia of noticias">
-        <img src="{{noticia.imagen}}" />
+    <ion-card class="card-iffb" *ngFor="let element of news">
+        <img src="{{element.imagen}}" />
         <ion-card-content>
             <ion-card-title>
-                {{noticia.titulo}}
+                {{element.titulo}}
             </ion-card-title>
             <div class="more-data">
                 <p class="data-element">
                     <ion-icon class="icono" name="information-circle"></ion-icon>
-                    {{noticia.subTitulo}}
+                    {{element.subTitulo}}
                 </p>
             </div>
         </ion-card-content>
@@ -19,91 +19,5 @@
             </button>
         </div>
     </ion-card>
-
-    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
-        <ion-infinite-scroll-content>
-        </ion-infinite-scroll-content>
-    </ion-infinite-scroll>
 
 </ion-content>
-
-<!-- 
-<ion-content padding>
-
-    <ion-card class="card-iffb">
-        <img src="assets/imgs/news-1.jpeg" />
-
-        <ion-card-content>
-            <ion-card-title>
-                Ganadores Campeonato Nacional día Sábado
-            </ion-card-title>
-            <div class="more-data">
-                <p class="data-element">
-                    <ion-icon class="icono" name="calendar"></ion-icon>
-                    Lunes 14 de Enéro de 2019, 8:30hs
-                </p>
-            </div>
-
-        </ion-card-content>
-
-        <div class="options-container">
-            <button class="btn-inscribirse" ion-button small>
-                Leer Mas
-            </button>
-        </div>
-
-    </ion-card>
-
-    <ion-card class="card-iffb">
-        <img src="assets/imgs/not.jpg" />
-
-        <ion-card-content>
-            <ion-card-title>
-                Emmett Lang empuja al Físico Culturismo en el Olimpismo
-            </ion-card-title>
-            <div class="more-data">
-                <p class="data-element">
-                    <ion-icon class="icono" name="information-circle"></ion-icon>
-                    El Presidente del Comité Olímpico Nicaragüense...
-                </p>
-            </div>
-
-        </ion-card-content>
-
-        <div class="options-container">
-            <button class="btn-inscribirse" ion-button small>
-                Leer Mas
-            </button>
-        </div>
-
-    </ion-card>
-
-    <ion-card class="card-iffb">
-        <img src="assets/imgs/noticia3.jpg" />
-
-        <ion-card-content>
-            <ion-card-title>
-                Resultados de la copa de verano 2019
-            </ion-card-title>
-            <div class="more-data">
-                <p class="data-element">
-                    <ion-icon class="icono" name="pin"></ion-icon>
-                    Carlos paz
-                </p>
-                <p class="data-element">
-                    <ion-icon class="icono" name="information-circle"></ion-icon>
-                    Enterate de todos los resultados...
-                </p>
-            </div>
-
-        </ion-card-content>
-
-        <div class="options-container">
-            <button class="btn-inscribirse" ion-button small>
-                Leer Mas
-            </button>
-        </div>
-
-    </ion-card>
-
-</ion-content> -->

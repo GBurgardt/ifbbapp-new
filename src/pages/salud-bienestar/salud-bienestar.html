@@ -1,30 +1,15 @@
 <ion-content padding>
 
-    <div class="optionsContainer">
-        <button ion-button (click)="irASaludBienestarNutricion()" color="dark" round icon-start>
-            <ion-icon name='nutrition' is-active="false"></ion-icon>
-            Nutricion
-        </button>
-        <button ion-button (click)="irASaludBienestarEntrenamiento()" color="dark" round icon-start>
-            <ion-icon name='flash' is-active="false"></ion-icon>
-            Entrenamiento
-        </button>
-        <button ion-button (click)="irASaludBienestarSuplementos()" color="dark" round icon-start>
-            <ion-icon name='add-circle' is-active="false"></ion-icon>
-            Suplementos
-        </button>
-    </div>
-
-    <ion-card class="card-iffb" *ngFor="let noticia of saludBienestar">
-        <img src="{{noticia.imagen}}" />
+    <ion-card class="card-iffb" *ngFor="let element of saludBienestar">
+        <img src="{{element.imagen}}" />
         <ion-card-content>
             <ion-card-title>
-                {{noticia.titulo}}
+                {{element.titulo}}
             </ion-card-title>
             <div class="more-data">
                 <p class="data-element">
                     <ion-icon class="icono" name="information-circle"></ion-icon>
-                    {{noticia.subTitulo}}
+                    {{element.subTitulo}}
                 </p>
             </div>
         </ion-card-content>
@@ -34,10 +19,5 @@
             </button>
         </div>
     </ion-card>
-
-    <!-- <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
-        <ion-infinite-scroll-content>
-        </ion-infinite-scroll-content>
-    </ion-infinite-scroll> -->
-
+    
 </ion-content>

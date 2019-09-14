@@ -31,9 +31,6 @@ import { HomePage } from '../pages/home/home';
 import { SwipeTabDirective } from '../directives/swipe-tab.directive';
 import { SaludBienestarService } from '../services/saludBienestarService/saludBienestarService';
 import { TorneosService } from '../services/torneosService/torneosService';
-import { SaludBienestarEntrenamientoPage } from '../pages/salud-bienestar-entrenamiento/salud-bienestar-entrenamiento';
-import { SaludBienestarNutricionPage } from '../pages/salud-bienestar-nutricion/salud-bienestar-nutricion';
-import { SaludBienestarSuplementosPage } from '../pages/salud-bienestar-suplementos/salud-bienestar-suplementos';
 
 @NgModule({
   declarations: [
@@ -53,10 +50,7 @@ import { SaludBienestarSuplementosPage } from '../pages/salud-bienestar-suplemen
     SaludBienestarPage,
     EscuelaIfbbPage,
     HomePage,
-    SwipeTabDirective,
-    SaludBienestarEntrenamientoPage,
-    SaludBienestarNutricionPage,
-    SaludBienestarSuplementosPage
+    SwipeTabDirective
   ],
   imports: [
     BrowserModule,
@@ -81,10 +75,7 @@ import { SaludBienestarSuplementosPage } from '../pages/salud-bienestar-suplemen
     NoticiasInternacionalesPage,
     SaludBienestarPage,
     EscuelaIfbbPage,
-    HomePage,
-    SaludBienestarEntrenamientoPage,
-    SaludBienestarNutricionPage,
-    SaludBienestarSuplementosPage
+    HomePage
   ],
   providers: [
     StatusBar,
