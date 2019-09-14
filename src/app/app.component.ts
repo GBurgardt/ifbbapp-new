@@ -1,7 +1,7 @@
 
-import { MisTorneosPage } from './../pages/mis-torneos/mis-torneos';
-import { CalendarioPage } from './../pages/calendario/calendario';
-import { IfbbPage } from './../pages/ifbb/ifbb';
+import { MisTorneosPage } from '../pages/menu/mis-torneos/mis-torneos';
+import { CalendarioPage } from '../pages/menu/calendario/calendario';
+import { IfbbPage } from '../pages/menu/ifbb/ifbb';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -10,8 +10,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
 
-import { NoticiasInternacionalesPage } from '../pages/noticias-internacionales/noticias-internacionales';
-import { EscuelaIfbbPage } from '../pages/escuela-ifbb/escuela-ifbb';
+import { NoticiasInternacionalesPage } from '../pages/menu/noticias-internacionales/noticias-internacionales';
+import { EscuelaIfbbPage } from '../pages/menu/escuela-ifbb/escuela-ifbb';
 import { HomePage } from '../pages/home/home';
 
 

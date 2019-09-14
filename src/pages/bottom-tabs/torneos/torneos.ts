@@ -1,10 +1,10 @@
 import { Component, LOCALE_ID } from '@angular/core';
 import { NavController, NavParams, App } from 'ionic-angular';
-import { InscripcionesPage } from '../inscripciones/inscripciones';
-import { TorneosService } from '../../services/torneosService/torneosService';
+import { InscripcionesPage } from '../../inscripciones/inscripciones';
+import { TorneosService } from '../../../services/torneosService/torneosService';
 import { registerLocaleData } from '@angular/common';
 import localeEsAr from '@angular/common/locales/es-AR';
-import { mockTorneos } from '../../constants/mockUpData';
+import { mockTorneos } from '../../../constants/mockUpData';
 
 registerLocaleData(localeEsAr, 'es-Ar');
 

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { NewsService } from '../../services/newsService/newsService';
-import { mockNews } from '../../constants/mockUpData';
+import { NewsService } from '../../../services/newsService/newsService';
+import { mockNews } from '../../../constants/mockUpData';
 
 
 @Component({

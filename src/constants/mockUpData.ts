@@ -1,122 +1,89 @@
 export const mockSaludBienestar = [
     {
-        imagen: '../../assets/78fbe0ec5a826df08403002d32737c7b_tazon-arroz-carne-verdura-huevo-1920x1005.jpg',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        imagen: '../../assets/bottom-tabs/01-salud-bienestar/img01.jpg',
+        titulo: 'Comida01',
+        subTitulo: 'Papa y Esta',
     },
     {
-        imagen: '../../assets/muscle_PNG12.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        imagen: '../../assets/bottom-tabs/01-salud-bienestar/img02.jpg',
+        titulo: 'Comida02',
+        subTitulo: 'Avena Super',
     },
     {
-        imagen: '../../assets/muscle_PNG52.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-    {
-        imagen: '../../assets/muscle_PNG56.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        imagen: '../../assets/bottom-tabs/01-salud-bienestar/img03.jpg',
+        titulo: 'Comida03',
+        subTitulo: 'Give me your money',
     },
 ];
-
-
-
-export const mockPromos = [
-    {
-        imagen: '../../assets/78fbe0ec5a826df08403002d32737c7b_tazon-arroz-carne-verdura-huevo-1920x1005.jpg',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-    {
-        imagen: '../../assets/muscle_PNG12.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-    {
-        imagen: '../../assets/muscle_PNG52.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-    {
-        imagen: '../../assets/muscle_PNG56.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-];
-
-
-
-export const mockCursos = [
-    {
-        imagen: '../../assets/78fbe0ec5a826df08403002d32737c7b_tazon-arroz-carne-verdura-huevo-1920x1005.jpg',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-    {
-        imagen: '../../assets/muscle_PNG12.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-    {
-        imagen: '../../assets/muscle_PNG52.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-    {
-        imagen: '../../assets/muscle_PNG56.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-];
-
-
 
 export const mockNews = [
     {
-        imagen: '../../assets/78fbe0ec5a826df08403002d32737c7b_tazon-arroz-carne-verdura-huevo-1920x1005.jpg',
+        imagen: '../../assets/bottom-tabs/02-news/img01.png',
         titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        subTitulo: 'Secuencias',
     },
     {
-        imagen: '../../assets/muscle_PNG12.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        imagen: '../../assets/bottom-tabs/02-news/img02.png',
+        titulo: 'Triceps',
+        subTitulo: 'Como no entrenarlo',
     },
     {
-        imagen: '../../assets/muscle_PNG52.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
-    },
-    {
-        imagen: '../../assets/muscle_PNG56.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        imagen: '../../assets/bottom-tabs/02-news/img03.png',
+        titulo: 'Espalda',
+        subTitulo: 'Cargas Máximas',
     },
 ];
 
-
-
 export const mockTorneos = [
     {
-        imagen: '../../assets/78fbe0ec5a826df08403002d32737c7b_tazon-arroz-carne-verdura-huevo-1920x1005.jpg',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        imagen: '../../assets/bottom-tabs/03-torneos/img01.jpg',
+        titulo: 'Torneo01',
+        subTitulo: 'Arnoldcito',
     },
     {
-        imagen: '../../assets/muscle_PNG12.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        imagen: '../../assets/bottom-tabs/03-torneos/img02.jpg',
+        titulo: 'Torneo Abril',
+        subTitulo: 'Campeón Cristian Martínez',
     },
     {
-        imagen: '../../assets/muscle_PNG52.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        imagen: '../../assets/bottom-tabs/03-torneos/img03.jpg',
+        titulo: 'Torneo POSICIONAR',
+        subTitulo: 'Inscribite',
+    },
+];
+
+export const mockPromos = [
+    {
+        imagen: '../../assets/bottom-tabs/04-promos/img01.png',
+        titulo: 'Suplementos',
+        subTitulo: 'Creatina',
     },
     {
-        imagen: '../../assets/muscle_PNG56.png',
-        titulo: 'Biceps',
-        subTitulo: 'Calorías',
+        imagen: '../../assets/bottom-tabs/04-promos/img02.png',
+        titulo: 'Crecimiento',
+        subTitulo: 'Proteína',
+    },
+    {
+        imagen: '../../assets/bottom-tabs/04-promos/img03.png',
+        titulo: 'Descanso',
+        subTitulo: 'BCAA',
+    },
+];
+
+export const mockCursos = [
+    {
+        imagen: '../../assets/bottom-tabs/05-cursos/img01.jpg',
+        titulo: 'Curso Nutricion',
+        subTitulo: 'Inscribite ya!',
+    },
+    {
+        imagen: '../../assets/bottom-tabs/05-cursos/img02.jpg',
+        titulo: 'Curso Wielder',
+        subTitulo: 'Ultimos cupos',
+    },
+    {
+        imagen: '../../assets/bottom-tabs/05-cursos/img03.jpg',
+        titulo: 'Curso FULL',
+        subTitulo: 'Enterate de todo',
     },
 ];

@@ -1,15 +1,15 @@
 
-import { TorneosPage } from './../torneos/torneos';
+import { TorneosPage } from '../bottom-tabs/torneos/torneos';
 import { Component } from '@angular/core';
 import { NavController, MenuController, IonicPage } from 'ionic-angular';
-import { NewsPage } from '../news/news';
-import { PromosPage } from '../promos/promos';
-import { CursosPage } from '../cursos/cursos';
+import { NewsPage } from '../bottom-tabs/news/news';
+import { PromosPage } from '../bottom-tabs/promos/promos';
+import { CursosPage } from '../bottom-tabs/cursos/cursos';
 import { UserPage } from '../user/user';
 import { ViewChild } from '@angular/core';
 import { Tabs } from 'ionic-angular';
 import { SwipeTabDirective } from '../../directives/swipe-tab.directive';
-import { SaludBienestarPage } from '../salud-bienestar/salud-bienestar';
+import { SaludBienestarPage } from '../bottom-tabs/salud-bienestar/salud-bienestar';
 
 // @IonicPage(
 //     {

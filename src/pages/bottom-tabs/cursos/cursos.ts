@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
-import { mockCursos } from '../../constants/mockUpData';
+import { mockCursos } from '../../../constants/mockUpData';
 
 
 @Component({
