@@ -1,18 +1,28 @@
 export const mockSaludBienestar = [
     {
-        imagen: '../../assets/bottom-tabs/01-salud-bienestar/img01.jpg',
-        titulo: 'Comida01',
-        subTitulo: 'Papa y Esta',
+        imagen: '../../assets/bottom-tabs/01-salud-bienestar/img02.jpg',
+        titulo: 'Desayuno',
+        subTitulo: 'Tostadas con huevos revueltos ',
     },
     {
-        imagen: '../../assets/bottom-tabs/01-salud-bienestar/img02.jpg',
-        titulo: 'Comida02',
-        subTitulo: 'Avena Super',
+        imagen: '../../assets/bottom-tabs/01-salud-bienestar/img06.jpg',
+        titulo: 'Media mañana',
+        subTitulo: 'Batido de proteínas',
+    },
+    {
+        imagen: '../../assets/bottom-tabs/01-salud-bienestar/img01.jpg',
+        titulo: 'Almuerzo',
+        subTitulo: 'Carne Burgardt',
+    },
+    {
+        imagen: '../../assets/bottom-tabs/01-salud-bienestar/img05.png',
+        titulo: 'Media tarde',
+        subTitulo: 'Queso crema francés',
     },
     {
         imagen: '../../assets/bottom-tabs/01-salud-bienestar/img03.jpg',
-        titulo: 'Comida03',
-        subTitulo: 'Give me your money',
+        titulo: 'Cena',
+        subTitulo: 'Express de Proteínas',
     },
 ];
 
@@ -75,18 +85,18 @@ export const mockPromos = [
 
 export const mockCursos = [
     {
-        imagen: '../../assets/bottom-tabs/05-cursos/img01.jpg',
-        titulo: 'Curso Nutricion',
-        subTitulo: 'Inscribite ya!',
+        imagen: '../../assets/bottom-tabs/05-cursos/img04.jpg',
+        titulo: 'TEMA I: Metabolismo y equilibro energético.',
+        subTitulo: 'Metabolismo, Valor Energético, Calorías, Vías para liberar energía, Gasto energético diario total o Metabolismo Total, Metabolismo Basal, Efecto Térmico de los Alimentos, Determinación del Peso, Composición Corporal.',
     },
     {
-        imagen: '../../assets/bottom-tabs/05-cursos/img02.jpg',
-        titulo: 'Curso Wielder',
-        subTitulo: 'Ultimos cupos',
+        imagen: '../../assets/bottom-tabs/05-cursos/img05.jpg',
+        titulo: 'TEMA II: Carbohidratos',
+        subTitulo: 'Definición de los Carbohidratos, Monosacáridos, Disacáridos, Polisacáridos, Fibra, Glucógeno, Rendimiento Atlético e Índice Glucémico.',
     },
     {
-        imagen: '../../assets/bottom-tabs/05-cursos/img03.png',
-        titulo: 'Curso FULL',
-        subTitulo: 'Enterate de todo',
+        imagen: '../../assets/bottom-tabs/05-cursos/img06.jpg',
+        titulo: 'TEMA III: Proteínas',
+        subTitulo: '¿Qué son?, Funciones, Necesidades diarias, Recomendaciones generales de consumo, Diferencias entre proteínas, Suplementos.',
     },
 ];
