@@ -24,6 +24,7 @@ page-promos {
         font-size: 1.0em;
         width: 100%;
         color: #000;
+
     }
 
     .button-md-danger {
@@ -44,9 +45,10 @@ page-promos {
     .button-md {
         border-radius: 64px;
         overflow: hidden;
-        height: 2.7rem;
-        font-size: 1.2rem;
+        height: 4rem;
+        font-size: 2rem;
         text-transform: capitalize;
+        margin: 20px;
     }
     .optionsContainer {
         display: flex;
@@ -55,6 +57,9 @@ page-promos {
     .button-full-md {
         margin-left: 9px;
         width: inherit;
+    }
+    .data-element{
+        white-space: initial;
     }
 }
 

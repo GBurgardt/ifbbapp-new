@@ -1,20 +1,24 @@
-
 <ion-content padding>
-  <ion-card>
-    <img src="../../assets/imgs/curso.png"/>
-    <div class="card-title"></div>
-    <div class="card-subtitle"></div>
-  </ion-card>
-  
-  <ion-card>
-    <img src="../../assets/imgs/curso2.jpg"/>
-    <div class="card-title"></div>
-    <div class="card-subtitle"></div>
-  </ion-card>
-  
-  <ion-card>
-    <img src="../../assets/imgs/curso3.jpg"/>
-    <div class="card-title"></div>
-    <div class="card-subtitle"></div>
-  </ion-card>
+
+    <ion-list>
+        <ion-item *ngFor="let element of cursos">
+            <ion-card class="card-iffb">
+                <img src="{{element.imagen}}"/>
+                <ion-card-content>
+                    <ion-card-title>
+                        {{element.titulo}}
+                        <!-- Ver clases .card-title, .card-title-text, y .card-subtitle -->
+                    </ion-card-title>
+
+                    <div class="more-data">
+                        <p class="data-element">
+                            <ion-icon class="icono" name="information-circle"></ion-icon>
+                            {{element.subTitulo}}
+                        </p>
+                    </div>
+
+                </ion-card-content>
+            </ion-card>
+        </ion-item>
+    </ion-list>
 </ion-content>

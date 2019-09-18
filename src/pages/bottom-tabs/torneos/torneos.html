@@ -1,36 +1,34 @@
 <ion-content padding>
 
-    <ion-card class="card-iffb" *ngFor="let torneo of torneos">
-        <img src="{{torneo.imagen}}" />
-        <ion-card-content>
-            <ion-card-title>
-                {{torneo.titulo}}
-            </ion-card-title>
+    <ion-list>
+        <ion-item *ngFor="let element of torneos">
+            <ion-card class="card-iffb">
+                <img src="{{element.imagen}}"/>
+                <ion-card-content>
+                    <ion-card-title>
+                        {{element.titulo}}
+                    </ion-card-title>
 
-            <div class="more-data">
-                <p class="data-element">
-                    <ion-icon class="icono" name="calendar"></ion-icon>
-                    {{torneo.fechaInicio | date:'EEEE d MMMM' | titlecase }}
-                </p>
-                <p class="data-element">
-                    <ion-icon class="icono" name="pin"></ion-icon>
-                    {{torneo.lugar}}
-                </p>
-            </div>
+                    <div class="more-data">
+                        <p class="data-element">
+                            <ion-icon class="icono" name="calendar"></ion-icon>
+                            {{element.fechaInicio}}
+                            <!-- {{element.fechaInicio | date:'EEEE d MMMM' | titlecase }} -->
+                        </p>
+                        <p class="data-element">
+                            <ion-icon class="icono" name="pin"></ion-icon>
+                            {{element.lugar}}
+                        </p>
+                    </div>
 
-        </ion-card-content>
+                </ion-card-content>
 
-        <div class="options-container">
-            <button (click)="doInscripcion($event, torneo)" class="btn-inscribirse" ion-button small>
-                Solicitar Inscripcion
-            </button>
-        </div>
-
-    </ion-card>
-
-    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
-        <ion-infinite-scroll-content>
-        </ion-infinite-scroll-content>
-    </ion-infinite-scroll>
-
+                <!-- <div class="options-container">
+                    <button (click)="doInscripcion($event, torneo)" class="btn-inscribirse" ion-button small>
+                        Solicitar Inscripcion
+                    </button>
+                </div> -->
+            </ion-card>
+        </ion-item>
+    </ion-list>
 </ion-content>

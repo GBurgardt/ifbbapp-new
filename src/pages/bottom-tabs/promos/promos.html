@@ -1,7 +1,6 @@
-
 <ion-content padding>
 
-  <div class="optionsContainer">
+  <!-- <div class="optionsContainer">
     <button ion-button color="dark" round icon-start>
       <ion-icon name='notifications' is-active="false"></ion-icon>
       Cupones
@@ -18,33 +17,33 @@
       <ion-icon name='person' is-active="false"></ion-icon>
       Tú
     </button>
-  </div>
+  </div> -->
 
   <ion-list>
-    <ion-item>
-      <ion-card>
-        <img src="../../assets/imgs/promo1.jpg"/>
-        <div class="card-title"><p class="card-title-text">Syntha-5</p></div>
-        <div class="card-subtitle">Con tu cupon obtenes un 20% de descuento</div>
-        <button ion-button color="danger" round full>Obtener Cupon</button>
+    <ion-item *ngFor="let element of promos">
+      <ion-card class="card-iffb">
+        <img src="{{element.imagen}}"/>
+        <ion-card-content>
+          <ion-card-title>
+            {{element.titulo}}
+            <!-- Ver clases .card-title, .card-title-text, y .card-subtitle -->
+          </ion-card-title>
+
+          <div class="more-data">
+            <p class="data-element">
+              <ion-icon class="icono" name="information-circle"></ion-icon>
+              {{element.subTitulo}}
+            </p>
+          </div>
+
+        </ion-card-content>
+
+        <div class="options-container">
+          <button ion-button color="danger" round full>Obtener Cupon</button>
+        </div>
+
       </ion-card>
-    </ion-item> 
-    <ion-item>
-      <ion-card>
-        <img src="../../assets/imgs/promo2.png" style="background: white;">
-        <div class="card-title"><p class="card-title-text">Entradas Campeonato Metropolitano</p></div>
-        <div class="card-subtitle">Con tu cupon obtenes un 2x1</div>
-        <button ion-button color="danger" round full>Obtener Cupon</button>
-      </ion-card>
-    </ion-item> 
-    <ion-item>
-      <ion-card>
-        <img src="../../assets/imgs/promo3.jpg"/>
-        <div class="card-title"><p class="card-title-text">Whey Protein</p></div>
-        <div class="card-subtitle">Con tu cupon obtenes un 25% de descuento</div>
-        <button ion-button color="danger" round full>Obtener Cupon</button>
-      </ion-card>
-    </ion-item>    
+    </ion-item>
   </ion-list>
-  
+
 </ion-content>

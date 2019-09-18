@@ -1,24 +1,9 @@
-page-salud-bienestar {
-
+page-news {
     ion-card {
         position: relative;
         text-align: center;    
         border-radius: 13px;   
       }
-
-    ion-card-content.card-content.card-content-md {
-        display: flex;
-        flex-direction: column;
-        // background: color($colors, grey);
-
-        .card-content {
-            display: flex;
-
-            > button {
-                background: color($colors, primario);
-            }
-        }
-    }
     
     .card-md {
         margin: 10px;
@@ -34,22 +19,12 @@ page-salud-bienestar {
             width: 100%;
         }
     }
-   
-    .card-title-md {
-        // display: block;
-        // font-size: 2.1rem;
-        // line-height: 1.2;
-        // /* color: #222; */
-        // /* margin: 2px 0; */
-        // padding: 3px 0;
-        text-align: center;
-        // font-weight: bold;
-    }
     
     .card-subtitle {
         font-size: 1.0em;
         width: 100%;
         color: #000;
+
     }
 
     .button-md-danger {
@@ -70,9 +45,10 @@ page-salud-bienestar {
     .button-md {
         border-radius: 64px;
         overflow: hidden;
-        height: 2.7rem;
-        font-size: 1.2rem;
+        height: 4rem;
+        font-size: 2rem;
         text-transform: capitalize;
+        margin: 20px;
     }
     .optionsContainer {
         display: flex;
@@ -82,7 +58,8 @@ page-salud-bienestar {
         margin-left: 9px;
         width: inherit;
     }
-
+    .data-element{
+        white-space: initial;
+    }
 }
-
 
