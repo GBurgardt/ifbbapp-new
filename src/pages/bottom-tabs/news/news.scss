@@ -3,7 +3,12 @@ page-news {
         position: relative;
         text-align: center;    
         border-radius: 13px;   
-      }
+    }
+
+    .card-img{
+        width: 50%;
+        margin: 20px auto;
+    }
     
     .card-md {
         margin: 10px;
@@ -17,6 +22,7 @@ page-news {
             font-weight: bold;
             color: #353232;
             width: 100%;
+            white-space: initial;
         }
     }
     
@@ -61,5 +67,6 @@ page-news {
     .data-element{
         white-space: initial;
     }
+
 }
 

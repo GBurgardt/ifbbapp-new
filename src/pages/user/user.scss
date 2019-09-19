@@ -1,7 +1,7 @@
 page-user {
-    .toolbar-background {
-        //background:color($colors, primario);
-    }
+    // .toolbar-background {
+    //     background:color($colors, primario);
+    // }
 
     .search-container {
         display: flex;
@@ -42,10 +42,12 @@ page-user {
         color: color($colors, dark);
     }
 
-    .user-photo ion-avatar {
+    .user-photo {
         margin: 0 auto;
         width: 120px;
         height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
       }
     
     .list-md{
@@ -80,9 +82,9 @@ page-user {
             font-weight: bold;
         }
 
-        .label-u:last-child {
-            // margin-left: 4px;
-        }
+        // .label-u:last-child {
+        //     margin-left: 4px;
+        // }
     }
 
     .item-u:nth-child(odd) {

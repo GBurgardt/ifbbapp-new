@@ -28,40 +28,61 @@ export const mockSaludBienestar = [
 
 export const mockNews = [
     {
-        imagen: '../../assets/bottom-tabs/02-news/img01.png',
-        titulo: 'Biceps',
-        subTitulo: 'Secuencias',
+        imagen: '../../assets/bottom-tabs/02-news/img04.png',
+        titulo: 'Fase 1: Semanas 1 y 2',
+        subTitulo: 'ENTRENAMIENTO 1: LUNES Y JUEVES (ENTRENAMIENTO DE EMPUJE)',
     },
     {
-        imagen: '../../assets/bottom-tabs/02-news/img02.png',
-        titulo: 'Triceps',
-        subTitulo: 'Como no entrenarlo',
+        imagen: '../../assets/bottom-tabs/02-news/img04.png',
+        titulo: 'Fase 1: Semanas 1 y 2',
+        subTitulo: 'ENTRENAMIENTO 2: MIÉRCOLES (Tren Inferior)',
     },
     {
-        imagen: '../../assets/bottom-tabs/02-news/img03.png',
-        titulo: 'Espalda',
-        subTitulo: 'Cargas Máximas',
+        imagen: '../../assets/bottom-tabs/02-news/img04.png',
+        titulo: 'Fase 1: Semanas 1 y 2',
+        subTitulo: 'ENTRENAMIENTO 3: MARTES Y VIERNES (ENTRENAMIENTO DE TRACCIÓN)',
+    },
+    {
+        imagen: '../../assets/bottom-tabs/02-news/img04.png',
+        titulo: 'Fase 1: Semanas 3-4',
+        subTitulo: 'ENTRENAMIENTO 1: LUNES Y JUEVES (ENTRENAMIENTO DE TRACCIÓN)',
+    },
+    {
+        imagen: '../../assets/bottom-tabs/02-news/img05.png',
+        titulo: 'Fase 2: Semanas 3-4',
+        subTitulo: 'ENTRENAMIENTO 2: MIERCOLES (Tren Inferior)',
+    },
+    {
+        imagen: '../../assets/bottom-tabs/02-news/img05.png',
+        titulo: 'Fase 2: Semanas 3-4',
+        subTitulo: 'ENTRENAMIENTO 3: MARTES Y VIERNES (ENTRENAMIENTO DE TRACCIÓN)',
     },
 ];
 
 export const mockTorneos = [
     {
-        imagen: '../../assets/bottom-tabs/03-torneos/img06.gif',
-        titulo: 'ARNOLD CLASSIC EUROPE',
-        fechaInicio: '20 de Septiembre',
-        lugar: 'Barcelona, España',
+        imagen: '../../assets/bottom-tabs/03-torneos/img07.jpg',
+        titulo: 'Copa Sarandi',
+        fechaInicio: 'Sabado 14 de Septiembre',
+        lugar: 'Candelaria, Misiones',
     },
     {
-        imagen: '../../assets/bottom-tabs/03-torneos/img05.jpeg',
-        titulo: 'South Pacific Oceania 2019',
-        fechaInicio: '5 de Octubre',
-        lugar: 'Tahiti, República Francesa',
+        imagen: '../../assets/bottom-tabs/03-torneos/img08.jpg',
+        titulo: 'Copa Ciudad del Viso',
+        fechaInicio: 'Domingo 22 de Septiembre',
+        lugar: 'Del Viso, Buenos Aires ',
     },
     {
-        imagen: '../../assets/bottom-tabs/03-torneos/img04.jpg',
-        titulo: 'IFBB NORDIC CUP',
-        fechaInicio: '4 de Octubre',
-        lugar: 'Lahti, Finlandia',
+        imagen: '../../assets/bottom-tabs/03-torneos/img09.jpg',
+        titulo: 'Copa Ciudad de la Yerba',
+        fechaInicio: 'Sabado 19 de Octubre',
+        lugar: 'Apostoles, Misiones',
+    },
+    {
+        imagen: '../../assets/bottom-tabs/03-torneos/img10.jpg',
+        titulo: 'Victory Classic',
+        fechaInicio: 'Sabado 19 de Octubre',
+        lugar: 'Gualeguay, Entre Rios',
     },
 ];
 
