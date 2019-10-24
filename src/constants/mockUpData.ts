@@ -61,29 +61,24 @@ export const mockNews = [
 
 export const mockTorneos = [
     {
-        imagen: '../../assets/bottom-tabs/03-torneos/img07.jpg',
-        titulo: 'Copa Sarandi',
-        fechaInicio: 'Sabado 14 de Septiembre',
-        lugar: 'Candelaria, Misiones',
+        imagen: '../../assets/bottom-tabs/03-torneos/img1.jpg',
+        titulo: 'IFBB Diamond Cup Madrid',
+        fechaInicio: 'October 18th-20th, 2019 (opened until 15th of October)',
+        lugar: 'Madrid, Spain',
     },
     {
-        imagen: '../../assets/bottom-tabs/03-torneos/img08.jpg',
-        titulo: 'Copa Ciudad del Viso',
-        fechaInicio: 'Domingo 22 de Septiembre',
-        lugar: 'Del Viso, Buenos Aires ',
+        imagen: '../../assets/bottom-tabs/03-torneos/img2.jpg',
+        titulo: 'IFBB Indonesian Grand Prix',
+        fechaInicio: 'October 25th-26th, 2019 (opened until 15th of October)',
+        lugar: 'Bali, Indonesia',
     },
     {
-        imagen: '../../assets/bottom-tabs/03-torneos/img09.jpg',
-        titulo: 'Copa Ciudad de la Yerba',
-        fechaInicio: 'Sabado 19 de Octubre',
-        lugar: 'Apostoles, Misiones',
+        imagen: '../../assets/bottom-tabs/03-torneos/img3.jpg',
+        titulo: 'IFBB Diamond Cup',
+        fechaInicio: 'November 16th-17th, 2019 (opened until 10th of November)',
+        lugar: 'Rome, Italy',
     },
-    {
-        imagen: '../../assets/bottom-tabs/03-torneos/img10.jpg',
-        titulo: 'Victory Classic',
-        fechaInicio: 'Sabado 19 de Octubre',
-        lugar: 'Gualeguay, Entre Rios',
-    },
+   
 ];
 
 export const mockPromos = [
