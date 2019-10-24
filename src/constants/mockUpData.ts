@@ -1,28 +1,27 @@
 export const mockSaludBienestar = [
     {
         imagen: "../../assets/bottom-tabs/01-salud-bienestar/img02.jpg",
-        titulo: "Desayuno",
-        subTitulo: "Tostadas con huevos revueltos "
+        titulo: "DIETA PARA BAJAR GRASA",
+        subTitulo:
+            "La dieta Para perder grasa, al contrario de lo que muchas personas piensan, no se deben realizar ejercicios de baja intensidad y por largo tiempo..."
     },
     {
         imagen: "../../assets/bottom-tabs/01-salud-bienestar/img06.jpg",
-        titulo: "Media mañana",
-        subTitulo: "Batido de proteínas"
+        titulo: "CONSEJOS PARA GANAR MASA MUSCULAR",
+        subTitulo:
+            "La clave se basa en ingerir productos ricos en calorías. Aprovecha y escoge aquellos productos que te gusten más, así, seguir esta dieta será mucho má..."
     },
     {
         imagen: "../../assets/bottom-tabs/01-salud-bienestar/img01.jpg",
-        titulo: "Almuerzo",
-        subTitulo: "Carne Burgardt"
+        titulo: "NUTRICIÓN BÁSICA",
+        subTitulo:
+            "¿Quieres potenciar tu optimismo, rendir más en el trabajo, ser feliz y mantenerte joven?..."
     },
     {
         imagen: "../../assets/bottom-tabs/01-salud-bienestar/img05.png",
-        titulo: "Media tarde",
-        subTitulo: "Queso crema francés"
-    },
-    {
-        imagen: "../../assets/bottom-tabs/01-salud-bienestar/img03.jpg",
-        titulo: "Cena",
-        subTitulo: "Express de Proteínas"
+        titulo: "Dieta de carga de hidratos de carbono?",
+        subTitulo:
+            "Una dieta de carga de hidratos de carbono, también llamada dieta de carga de carbohidratos, es una estrategia para mejorar tu rendimiento atlético en eventos de..."
     }
 ];
 
@@ -47,19 +46,19 @@ export const mockNews = [
     },
     {
         imagen: "../../assets/bottom-tabs/02-news/img04.png",
-        titulo: "Fase 1: Semanas 3-4",
-        subTitulo: "ENTRENAMIENTO 1: LUNES Y JUEVES (ENTRENAMIENTO DE TRACCIÓN)"
+        titulo: "DIAMOND CUP MADRID 2019!",
+        subTitulo: "The Diamond Cup Madrid 2019 was a complete success, the..."
     },
     {
         imagen: "../../assets/bottom-tabs/02-news/img05.png",
-        titulo: "Fase 2: Semanas 3-4",
-        subTitulo: "ENTRENAMIENTO 2: MIERCOLES (Tren Inferior)"
-    },
-    {
-        imagen: "../../assets/bottom-tabs/02-news/img05.png",
-        titulo: "Fase 2: Semanas 3-4",
+        titulo: "IFBB-CBBA BELT & ROAD 2019",
         subTitulo:
-            "ENTRENAMIENTO 3: MARTES Y VIERNES (ENTRENAMIENTO DE TRACCIÓN)"
+            "Another amazing year of the IFBB-CBBA Belt and Road competition..."
+    },
+    {
+        imagen: "../../assets/bottom-tabs/02-news/img05.png",
+        titulo: "ZHANG PENGGANG, PROMOTER OF THE BELT & ROAD EVENT ",
+        subTitulo: "The promoter of the Belt & Road Event, Zhang Penggang..."
     }
 ];
 
