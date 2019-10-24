@@ -1,17 +1,16 @@
 page-torneos {
     ion-card {
         position: relative;
-        text-align: center;    
-        border-radius: 13px;   
-      }
-    
+        text-align: center;
+        border-radius: 13px;
+    }
     .card-md {
         margin: 10px;
         border-radius: 13px;
     }
-    
     .card-title {
-        width: 100%;   
+        width: 100%;
+        white-space: initial;
         .card-title-text {
             font-size: 4.5vw;
             font-weight: bold;
@@ -20,29 +19,23 @@ page-torneos {
             white-space: initial;
         }
     }
-    
     .card-subtitle {
         font-size: 1.0em;
         width: 100%;
         color: #000;
-
     }
-
     .button-md-danger {
         color: #000;
         background: color($colors, primario);
         font-size: 1.5rem;
     }
-
     .card-md {
         background: color($colors, grey);
     }
-
     .button-round-md {
         border-radius: 64px;
-        padding: 0 1rem; 
+        padding: 0 1rem;
     }
-
     .button-md {
         border-radius: 64px;
         overflow: hidden;
@@ -54,13 +47,11 @@ page-torneos {
     .optionsContainer {
         display: flex;
     }
-
     .button-full-md {
         margin-left: 9px;
         width: inherit;
     }
-    .data-element{
+    .data-element {
         white-space: initial;
     }
 }
-
