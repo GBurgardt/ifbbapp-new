@@ -1,0 +1,98 @@
+page-calendario {
+  /*.selected-date {
+        width: 20px;
+        height: 2px;
+        background-color: blue;
+    }
+      
+    .unselected-date {
+        border: none;
+    }
+      */
+}
+
+page-calendario [col-1] {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 8.33333%;
+  flex: 0 0 14.285714285714286%;
+  width: 14.285714285714286%;
+  max-width: 14.285714285714286%;
+}
+
+page-calendario .col {
+  text-align: center;
+  padding: 8px;
+}
+
+page-calendario .last-month, page-calendario .next-month {
+  color: #999999;
+  font-size: 90%;
+}
+
+page-calendario .currentDate, page-calendario .otherDate {
+  padding: 5px;
+}
+
+page-calendario .currentDate {
+  font-weight: bold;
+  background-color: #767a7b;
+  color: white;
+  border-radius: 4px;
+}
+
+page-calendario .calendar-header {
+  background-color: #004b96;
+  color: #FFFFFF;
+}
+
+page-calendario .event-bullet {
+  margin: 2px auto;
+  height: 5px;
+  width: 5px;
+  background-color: green;
+  border-radius: 30px;
+}
+
+page-calendario ion-col:focus {
+  background-color: red;
+}
+
+page-calendario .calendar-body .grid {
+  padding: 0;
+}
+
+page-calendario .calendar-body .col:last-child {
+  border-right: none;
+}
+
+page-calendario .calendar-body .calendar-weekday, page-calendario .calendar-body .calendar-date {
+  text-align: center;
+  margin: 0;
+}
+
+page-calendario .calendar-body .calendar-weekday {
+  font-weight: bold;
+  border-bottom: solid 1px #000000;
+  background-color: #4d94dc;
+}
+
+page-calendario .calendar-body .calendar-date {
+  border-top: solid 1px #000000;
+  border-bottom: solid 1px #000000;
+}
+
+page-calendario .calendar-container {
+  padding-top: 11%;
+}
+
+page-calendario .calendar-date ion-col:focus {
+  background: #a3caf1 !important;
+}
+
+page-calendario .calendar-date .marca {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: red;
+}
+/*# sourceMappingURL=calendario.css.map */

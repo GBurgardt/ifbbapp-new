@@ -1,9 +1,18 @@
 page-ifbb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .textContent {
         padding: 10px;
-        
     }
-    .text{
+    .text {
         font-size: medium;
+    }
+
+    .img-presidente {
+        border-radius: 50%;
+        width: 50%;
+        margin: 0px 25%;
     }
 }

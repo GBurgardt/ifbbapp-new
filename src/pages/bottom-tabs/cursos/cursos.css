@@ -1,0 +1,18 @@
+page-cursos ion-card {
+  position: relative;
+  text-align: center;
+  border-radius: 13px;
+}
+
+page-cursos .card-md {
+  margin: 10px;
+  border-radius: 13px;
+}
+
+page-cursos .card-title-text {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #353232;
+  width: 100%;
+}
+/*# sourceMappingURL=cursos.css.map */
