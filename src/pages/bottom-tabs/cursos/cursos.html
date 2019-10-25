@@ -1,25 +1,22 @@
 <ion-content padding>
-
     <ion-list>
         <ion-item *ngFor="let element of cursos">
             <ion-card class="card-iffb">
-                <img src="{{element.imagen}}" />
+                <img src="{{ element.imagen }}" />
                 <ion-card-content>
                     <ion-card-title>
-                        {{element.titulo}}
+                        {{ element.titulo }}
                         <!-- Ver clases .card-title, .card-title-text, y .card-subtitle -->
                     </ion-card-title>
                     <div class="more-data">
                         <p class="data-element">
-                            {{element.subTitulo}}
+                            {{ element.subTitulo }}
                         </p>
                     </div>
-
-
                 </ion-card-content>
                 <div class="options-container">
                     <button class="btn-inscribirse" ion-button small>
-                        Leer Mas
+                        inscribirse
                     </button>
                 </div>
             </ion-card>
