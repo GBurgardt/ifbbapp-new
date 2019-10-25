@@ -66,19 +66,19 @@ export const mockTorneos = [
     {
         imagen: "../../assets/bottom-tabs/03-torneos/img1.jpg",
         titulo: "IFBB Diamond Cup Madrid",
-        fechaInicio: "October 18th-20th, 2019 (opened until 15th of October)",
+        fechaInicio: "October 18th-20th, 2019",
         lugar: "Madrid, Spain"
     },
     {
         imagen: "../../assets/bottom-tabs/03-torneos/img2.jpg",
         titulo: "IFBB Indonesian Grand Prix",
-        fechaInicio: "October 25th-26th, 2019 (opened until 15th of October)",
+        fechaInicio: "October 25th-26th, 2019",
         lugar: "Bali, Indonesia"
     },
     {
         imagen: "../../assets/bottom-tabs/03-torneos/img3.jpg",
         titulo: "IFBB Diamond Cup",
-        fechaInicio: "November 16th-17th, 2019 (opened until 10th of November)",
+        fechaInicio: "November 16th-17th, 2019",
         lugar: "Rome, Italy"
     }
 ];
@@ -107,22 +107,22 @@ export const mockPromos = [
 export const mockCursos = [
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img01.png",
-        titulo: "PERSONAL TRAINER",
+        titulo: "PERSONAL TRAINER"
     },
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img02.png",
-        titulo: "NUTRICION BASICA",
+        titulo: "NUTRICION BASICA"
     },
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img03.png",
-        titulo: "MONITOR DE SALA",
+        titulo: "MONITOR DE SALA"
     },
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img04.png",
-        titulo: "NUTRICION AVANZADA",
+        titulo: "NUTRICION AVANZADA"
     },
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img05.png",
-        titulo: "MASTER",
+        titulo: "MASTER"
     }
 ];
