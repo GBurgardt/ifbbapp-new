@@ -108,7 +108,6 @@ export const mockCursos = [
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img01.png",
         titulo: "PERSONAL TRAINER",
-        subTitulo:"Módulo I: Fisiología e implicaciones médicas del ejercicio \x0a Módulo II: La nutrición en el entrenamiento personalizado. \x0a Módulo III: Ciclos de entrenamiento...",
     },
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img02.png",
