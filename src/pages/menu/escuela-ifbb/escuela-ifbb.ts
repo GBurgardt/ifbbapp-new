@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import {  NavController, NavParams } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { NavController, NavParams } from "ionic-angular";
+import { mockEscuela } from "../../../constants/mockUpData";
 
 /**
  * Generated class for the EscuelaIfbbPage page.
@@ -8,18 +9,16 @@ import {  NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-
 @Component({
-  selector: 'page-escuela-ifbb',
-  templateUrl: 'escuela-ifbb.html',
+    selector: "page-escuela-ifbb",
+    templateUrl: "escuela-ifbb.html"
 })
 export class EscuelaIfbbPage {
+    escuela = mockEscuela;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EscuelaIfbbPage');
-  }
-
+    ionViewDidLoad() {
+        console.log("ionViewDidLoad EscuelaIfbbPage");
+    }
 }

@@ -19,7 +19,7 @@ export const mockSaludBienestar = [
     },
     {
         imagen: "../../assets/bottom-tabs/01-salud-bienestar/img05.png",
-        titulo: "Dieta de carga de hidratos de carbono?",
+        titulo: "Dieta de carga de hidratos de carbono",
         subTitulo:
             "Una dieta de carga de hidratos de carbono, también llamada dieta de carga de carbohidratos, es una estrategia para mejorar tu rendimiento atlético en eventos de..."
     }
@@ -124,5 +124,40 @@ export const mockCursos = [
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img05.png",
         titulo: "MASTER"
+    }
+];
+
+export const mockEscuela = [
+    {
+        imagen: "../../assets/menu/ifbb-escuela/escuela1.jpg",
+        boton: "CURL DE BICEPS"
+    },
+    {
+        imagen: "../../assets/menu/ifbb-escuela/escuela2.jpg",
+        boton: "EXTENSIONES DE TRICEPS "
+    },
+    {
+        imagen: "../../assets/menu/ifbb-escuela/escuela3.jpg",
+        boton: "EXTENSIONES DE TRICEPS"
+    },
+    {
+        imagen: "../../assets/menu/ifbb-escuela/escuela4.jpg",
+        boton: "ELEVACIONES LATERALES"
+    },
+    {
+        imagen: "../../assets/menu/ifbb-escuela/escuela5.jpg",
+        boton: "PRESS DE BANCA"
+    },
+    {
+        imagen: "../../assets/menu/ifbb-escuela/escuela6.jpg",
+        boton: "PESO MUERTO"
+    },
+    {
+        imagen: "../../assets/menu/ifbb-escuela/escuela7.jpg",
+        boton: "SENTADILLAS"
+    },
+    {
+        imagen: "../../assets/menu/ifbb-escuela/escuela8.jpg",
+        boton: "EXTENSION DE RODILLAS"
     }
 ];
