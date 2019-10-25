@@ -107,22 +107,23 @@ export const mockPromos = [
 export const mockCursos = [
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img01.png",
-        titulo: "PERSONAL TRAINER"
+        titulo: "PERSONAL TRAINER",
+        subTitulo:"Módulo I: Fisiología e implicaciones médicas del ejercicio \x0a Módulo II: La nutrición en el entrenamiento personalizado. \x0a Módulo III: Ciclos de entrenamiento...",
     },
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img02.png",
-        titulo: "NUTRICION BASICA"
+        titulo: "NUTRICION BASICA",
     },
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img03.png",
-        titulo: "MONITOR DE SALA"
+        titulo: "MONITOR DE SALA",
     },
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img04.png",
-        titulo: "NUTRICION AVANZADA"
+        titulo: "NUTRICION AVANZADA",
     },
     {
         imagen: "../../assets/bottom-tabs/05-cursos/img05.png",
-        titulo: "MASTER"
+        titulo: "MASTER",
     }
 ];

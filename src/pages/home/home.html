@@ -19,11 +19,11 @@
 <ion-content padding>
     <div class="header">
         <ion-tabs scrollable swipeTab (ionChange)="transition($event)" (onTabChange)="onTabChange($event)" #myTabs tabsPlacement="bottom">
-            <ion-tab tabIcon="heart" [root]="saludBienestar"> </ion-tab>
             <ion-tab tabIcon="analytics" [root]="news"> </ion-tab>
-            <ion-tab tabIcon="trophy" [root]="torneos"> </ion-tab>
-            <ion-tab tabIcon="add-circle" [root]="promos"> </ion-tab>
             <ion-tab tabIcon="clipboard" [root]="cursos"> </ion-tab>
+            <ion-tab tabIcon="trophy" [root]="torneos"> </ion-tab>
+            <ion-tab tabIcon="heart" [root]="saludBienestar"> </ion-tab>
+            <ion-tab tabIcon="add-circle" [root]="promos"> </ion-tab>
         </ion-tabs>
     </div>
 
