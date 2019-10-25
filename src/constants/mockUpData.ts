@@ -106,21 +106,23 @@ export const mockPromos = [
 
 export const mockCursos = [
     {
-        imagen: "../../assets/bottom-tabs/05-cursos/img04.jpg",
-        titulo: "TEMA I: Metabolismo y equilibro energético.",
-        subTitulo:
-            "Metabolismo, Valor Energético, Calorías, Vías para liberar energía, Gasto energético diario total o Metabolismo Total, Metabolismo Basal, Efecto Térmico de los Alimentos, Determinación del Peso, Composición Corporal."
+        imagen: "../../assets/bottom-tabs/05-cursos/img01.png",
+        titulo: "PERSONAL TRAINER"
     },
     {
-        imagen: "../../assets/bottom-tabs/05-cursos/img05.jpg",
-        titulo: "TEMA II: Carbohidratos",
-        subTitulo:
-            "Definición de los Carbohidratos, Monosacáridos, Disacáridos, Polisacáridos, Fibra, Glucógeno, Rendimiento Atlético e Índice Glucémico."
+        imagen: "../../assets/bottom-tabs/05-cursos/img02.png",
+        titulo: "NUTRICION BASICA"
     },
     {
-        imagen: "../../assets/bottom-tabs/05-cursos/img06.jpg",
-        titulo: "TEMA III: Proteínas",
-        subTitulo:
-            "¿Qué son?, Funciones, Necesidades diarias, Recomendaciones generales de consumo, Diferencias entre proteínas, Suplementos."
+        imagen: "../../assets/bottom-tabs/05-cursos/img03.png",
+        titulo: "MONITOR DE SALA"
+    },
+    {
+        imagen: "../../assets/bottom-tabs/05-cursos/img04.png",
+        titulo: "NUTRICION AVANZADA"
+    },
+    {
+        imagen: "../../assets/bottom-tabs/05-cursos/img05.png",
+        titulo: "MASTER"
     }
 ];
