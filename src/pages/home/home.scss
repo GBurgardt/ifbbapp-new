@@ -1,32 +1,25 @@
 page-home {
-
     .tabbar.show-tabbar {
         background: color($colors, primario);
-        color:color($colors, dark);
+        color: color($colors, dark);
     }
-
     .tabs-md .tab-button {
-        color:color($colors, dark);
+        color: color($colors, dark);
         font-weight: bold;
         /* font-size: 3rem !important; */
     }
-
     .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
-        color:color($colors, dark);
+        color: color($colors, dark);
     }
-
     .tabs-md .tab-button {
         min-height: 4.7rem;
     }
-
     .tabs-md .tab-button-icon {
         color: color($colors, dark);
     }
-    
     .search-container {
         display: flex;
         justify-content: space-between;
-
         .custom-search {
             display: flex;
             width: 40%;
@@ -34,48 +27,40 @@ page-home {
             padding: 0px;
             /* border-radius: 17px; */
             margin: 14px 9px 9px;
-            color:color($colors, dark);
+            color: color($colors, dark);
             height: 23px;
-            > i {
+            >i {
                 margin: 1.7px 0px 0px 5px;
                 height: 20px;
                 font-size: 1.5rem;
             }
-
-            > input {
+            >input {
                 margin: 1px;
             }
-
             .text-input-md {
                 margin: 5px 8px;
             }
-
             ion-input.input.input-md {
                 height: 20px;
             }
         }
     }
-
     ion-header {
         background: color($colors, primario);
     }
-
     .scroll-content {
         overflow: scroll;
     }
-
-    .fixed-content, .scroll-content {
+    .fixed-content,
+    .scroll-content {
         // margin-top: 44px !important;
         margin-top: 24px !important;
     }
-
-
-    .user-container, .menu-container {
+    .user-container,
+    .menu-container {
         margin: 6px 12px;
         padding: 5px 10px 1px;
         font-size: 2.4rem;
-        color:color($colors, dark);
+        color: color($colors, dark);
     }
-    
 }
-

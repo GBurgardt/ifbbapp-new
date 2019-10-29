@@ -1,79 +1,65 @@
 page-promos {
-  ion-header {
-    margin-top: 24px !important;
-    background: #ffffff !important;
-  }
-
-  ion-content {
-    margin-top: 48px !important;
-  }
-
-  ion-fab {
-    margin-bottom: 50px;
-  }
-
-  .card-md {
-    margin: 10px;
-    border-radius: 13px;
-  }
-
-  .card-title-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #353232;
-    width: 100%;
-    white-space: initial;
-  }
-
-  .card-title {
-    width: 100%;
-    white-space: initial;
-  }
-
-  .card-subtitle {
-    font-size: 1em;
-    width: 100%;
-    color: #000;
-  }
-
-  .button-md-danger {
-    color: #000;
-    background: color($colors, primario);
-    font-size: 1.5rem;
-  }
-
-  .card-md {
-    background: color($colors, grey);
-  }
-
-  .button-round-md {
-    border-radius: 64px;
-    padding: 0 1rem;
-  }
-
-  .button-md {
-    border-radius: 64px;
-    overflow: hidden;
-    height: 4rem;
-    font-size: 2rem;
-    text-transform: capitalize;
-    margin: 20px;
-  }
-
-  .optionsContainer {
-    display: flex;
-  }
-
-  .button-full-md {
-    margin-left: 9px;
-    width: inherit;
-  }
-
-  .data-element {
-    white-space: initial;
-  }
-
-  ion-chip {
-    width: 100%;
-  }
+    ion-header {
+        margin-top: 24px !important;
+        background: #ffffff !important;
+    }
+    ion-content {
+        margin-top: 48px !important;
+    }
+    ion-fab {
+        margin-bottom: 50px;
+    }
+    .card-md {
+        margin: 10px;
+        border-radius: 13px;
+    }
+    .card-title-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #353232;
+        width: 100%;
+        white-space: initial;
+    }
+    .card-title {
+        width: 100%;
+        white-space: initial;
+    }
+    .card-subtitle {
+        font-size: 1em;
+        width: 100%;
+        color: #000;
+    }
+    .button-md-danger {
+        color: #000;
+        background: color($colors, primario);
+        font-size: 1.5rem;
+    }
+    .card-md {
+        background: color($colors, grey);
+    }
+    .button-round-md {
+        border-radius: 64px;
+        padding: 0 1rem;
+    }
+    .button-md {
+        border-radius: 64px;
+        overflow: hidden;
+        height: 4rem;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        margin: 20px;
+    }
+    .optionsContainer {
+        display: flex;
+    }
+    .button-full-md {
+        margin-left: 9px;
+        width: inherit;
+    }
+    .data-element {
+        white-space: initial;
+    }
+    ion-chip {
+        width: 100%;
+    }
 }
