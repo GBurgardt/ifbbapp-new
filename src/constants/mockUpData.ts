@@ -100,6 +100,22 @@ export const mockPromos = [
         imagen: "../../assets/bottom-tabs/04-promos/img10.jpg",
         titulo: "Pro Tan® Overnight Competition Color®",
     },
+    {
+        imagen: "../../assets/bottom-tabs/04-promos/img01.png",
+        titulo: "Gold Standard Whey Protein X 2 Lb Optimum Nutrition Isolate",
+    },
+    {
+        imagen: "../../assets/bottom-tabs/04-promos/img02.png",
+        titulo: "Creatina 100% Pura 300 Grs Pulver",
+    },
+    {
+        imagen: "../../assets/bottom-tabs/04-promos/img03.png",
+        titulo: "Prolac Whey Protein 1 Kg Pulver®",
+    },
+    {
+        imagen: "../../assets/bottom-tabs/04-promos/img11.png",
+        titulo: "Amino Charge Scitec Nutrition 600g",
+    },
     
    
 ];
